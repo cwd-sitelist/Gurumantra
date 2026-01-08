@@ -6917,7 +6917,7 @@ section.news-section .theme-btn {
 
 .podcast-section{
 	position:relative;
-	padding:0px 0px 80px;
+	padding:80px 0px 80px 0px;
 }
 
 
@@ -7788,7 +7788,7 @@ section.news-section .theme-btn {
 	text-align:center !important;
 	line-height:80px;
 	border-radius:50%;
-	background-color:#f5f9fa;
+	background-color:#eee;
 	line-height: 70px;
 }
 
@@ -8166,7 +8166,7 @@ section.news-section .theme-btn {
 	text-align:center !important;
 	line-height:80px;
 	border-radius:50%;
-	background-color:#f5f9fa;
+	background-color:#eee;
 	line-height: 70px !important;
 }
 
@@ -8334,7 +8334,6 @@ section.news-section .theme-btn {
 }
 .section-bg-1{
 	background-color: #000;
-	padding: 50px 0px 0px 0px;
 }
 .footer_spacing{
 	padding-left: 94px;

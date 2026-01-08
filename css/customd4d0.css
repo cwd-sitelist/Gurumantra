@@ -554,17 +554,42 @@ rs-sbg-wrap rs-dotted{
 	color:var(--main-color);
 }
 
-.main-header .header-lower .logo-box .logo img,
-.sidebar-info-contents .content-inner .logo img{
-	height:80px;
-    width:301px;
-
+.main-header .header-lower .auto-container {
+    display: flex;
+    align-items: center;       /* vertical center */
+    justify-content: space-between;
 }
+
+/* Logo box center alignment */
+.main-header .header-lower .logo-box {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo image – sharp & proportional */
+.main-header .header-lower .logo-box .logo img,
+.sidebar-info-contents .content-inner .logo img {
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* .main-header .header-lower .logo-box .logo img,
+.sidebar-info-contents .content-inner .logo img{
+	 max-height: 60px;   
+    width: auto;        
+    height: auto;
+    image-rendering: auto;
+} */
+
 .main-header .sticky-header .logo img,
 .main-footer .logo-widget .logo img,
 .footer-style-two .logo-widget .logo img{
-	height:66px;
-	width: 260px;
+	 max-height: 60px;   
+    width: auto;        
+    height: auto;
+    image-rendering: auto;
 }
 
 /* Progress */
