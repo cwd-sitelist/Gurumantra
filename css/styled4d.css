@@ -2609,7 +2609,7 @@
 	font-weight:700;
 	border:none;
 	font-size:var(--font-16);
-	color:var(--dark-color);
+	color:var(--white-color);
 	margin-bottom:var(--margin-bottom-15);
 	background-color:#087f7b;
 }
@@ -2772,10 +2772,10 @@
 
 .course-tabs .required-column .required-text:before{
 	position:absolute;
-	content: "\f16e";
+	content: "✓";
 	right:-10px;
 	top:0px;
-	font-family: "flaticon";
+	
 }
 
 .course-tabs .target-box{
@@ -2802,11 +2802,11 @@
 
 .course-tabs .target-list li:before{
 	position:absolute;
-	 content: "\f147";
+	 content: "→";
 	left:0px;
 	top:0px;
 	line-height:22px;
-	font-family: "flaticon";
+	
 }
 
 .course-tabs .target-list li:last-child{
