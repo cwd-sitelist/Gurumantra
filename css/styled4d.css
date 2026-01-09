@@ -1602,7 +1602,7 @@
 	position:relative;
 	display:inline-block;
 	padding:16px 30px 14px;
-	background-color:var(--main-color-two);
+	background-color:var(--main-color);
 }
 
 .page-title .page-breadcrumb li{
@@ -1623,7 +1623,7 @@
 }
 
 .page-title .page-breadcrumb li a{
-	color:var(--dark-color);
+	color:var(--white-color);
 	font-size:var(--font-14);
 	font-weight:400;
 }
@@ -2368,7 +2368,7 @@
 	display:inline-block;
 	color:var(--dark-color);
 	font-size:var(--font-14);
-	background-color:var(--main-color-two);
+	background-color:var(--main-color);
 }
 
 .cource-detail-banner-section .content-box h1{
@@ -2611,7 +2611,7 @@
 	font-size:var(--font-16);
 	color:var(--dark-color);
 	margin-bottom:var(--margin-bottom-15);
-	background-color:var(--main-color-two);
+	background-color:#087f7b;
 }
 
 .single_add_to_cart_button, .tutor-button, .tutor-btn{
@@ -8430,3 +8430,18 @@ section.news-section .theme-btn {
   visibility: hidden;
   transition: all 0.6s ease;
 }
+
+
+.whatsappfooter {
+    position: fixed;
+    bottom: 66px;
+    height: 50px;
+    z-index: 99;
+    width: 40px;
+    right: 20px;
+}
+
+
+
+
+

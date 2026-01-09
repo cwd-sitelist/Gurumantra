@@ -1286,7 +1286,7 @@ header.main-header.header-style-two.header-style-five {
 
 .sidebar-info-contents .content-inner .social-box li a:hover{
 	color:var(--white-color);
-	background-color:var(--main-color);
+	background-color:#087f7b;
 }
 
 .close-side-widget,

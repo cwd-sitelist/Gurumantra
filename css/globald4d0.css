@@ -505,6 +505,11 @@ a{
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
 }
+a:hover {
+    color:#087f7b;
+    text-decoration: underline;
+}
+
 
 button,
 a:hover,a:focus,a:visited{
