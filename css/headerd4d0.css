@@ -948,6 +948,7 @@ header.main-header.header-style-two.header-style-five {
     float: right;
     padding: 36.5px 0px;
     right: 0px;
+	left: 447px;
     top: 0px;
 }
 
@@ -971,7 +972,7 @@ header.main-header.header-style-two.header-style-five {
 
 .main-header .header-lower .search-box-btn:hover,
 .main-header .header-lower .outer-box .nav-btn:hover{
-	color:var(--main-color-two);
+	color:var(--main-color);
 }
 
 .main-header .header-lower .outer-box .nav-btn{
@@ -1214,7 +1215,7 @@ header.main-header.header-style-two.header-style-five {
 }
 
 .sidebar-info-contents .content-inner .logo {
-	padding-bottom:var(--padding-bottom-20);
+	padding-bottom:30px;
 }
 
 .sidebar-info-contents .content-inner .logo img{

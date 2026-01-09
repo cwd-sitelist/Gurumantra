@@ -492,3 +492,17 @@
     });
 
 })(window.jQuery);
+
+
+
+/* =======================================================================================
+   preloader function
+   ========================================================================================*/ 
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("hide");
+
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 600);
+  });
