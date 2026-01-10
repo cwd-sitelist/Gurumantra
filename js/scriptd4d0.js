@@ -506,3 +506,22 @@
       preloader.style.display = "none";
     }, 600);
   });
+
+  /* =======================================================================================
+   smooth Scroll
+   ========================================================================================*/ 
+
+let lastScrollTop = 0;
+const header = document.getElementById("main-header");
+
+window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop < lastScrollTop && scrollTop > 100) {
+        header.classList.add("show");   // scrolling up
+    } else {
+        header.classList.remove("show"); // scrolling down
+    }
+
+    lastScrollTop = scrollTop;
+});
