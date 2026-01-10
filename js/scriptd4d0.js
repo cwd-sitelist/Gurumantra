@@ -512,16 +512,29 @@
    ========================================================================================*/ 
 
 let lastScrollTop = 0;
-const header = document.getElementById("main-header");
-
-window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop < lastScrollTop && scrollTop > 100) {
-        header.classList.add("show");   // scrolling up
+function headerStyle() {
+  if ($('.main-header').length) {
+ 
+    var windowpos = $(window).scrollTop();
+    var siteHeader = $('.main-header');
+    var scrollLink = $('.scroll-to-top');
+ 
+    // SET FIXED HEIGHT (important)
+    var headerHeight = 90; // adjust to your header height
+ 
+    if (windowpos > headerHeight) {
+      if (!siteHeader.hasClass('fixed-header')) {
+        siteHeader.addClass('fixed-header');
+      }
+      scrollLink.fadeIn(300);
     } else {
-        header.classList.remove("show"); // scrolling down
+      siteHeader.removeClass('fixed-header');
+      scrollLink.fadeOut(300);
     }
-
-    lastScrollTop = scrollTop;
+  }
+}
+ 
+// Run on load & scroll
+$(window).on('scroll load', function () {
+  headerStyle();
 });
