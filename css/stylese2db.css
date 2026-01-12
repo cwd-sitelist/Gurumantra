@@ -1,3 +1,6 @@
+.xs-sidebar-group:has(.isActive) body{
+  overflow: hidden;
+}
 .wpcf7 .screen-reader-response {
 	position: absolute;
 	overflow: hidden;
