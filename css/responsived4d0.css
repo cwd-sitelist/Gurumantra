@@ -946,7 +946,13 @@
 	.education-tabs .sec-title-two h2,
 	h2{
 		line-height:1.3em;
-		font-size:var(--font-26);
+		font-size:var(--font-20);
+	}
+	.sec-title-six h2{
+		font-size: 23px;
+	}
+	.section-bg {
+		margin-top: 0px;
 	}
 	
 	.news-block.style-two .inner-box h3,

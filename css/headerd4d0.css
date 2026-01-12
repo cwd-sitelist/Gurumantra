@@ -148,7 +148,7 @@ header.main-header.header_v4 {
 }
 .header_bg{
 	background-color: #fff;
-	opacity: 0.7;
+	/* opacity: 0.7; */
 }
 
 .main-header .header-lower .logo-box{
