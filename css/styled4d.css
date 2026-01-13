@@ -2574,6 +2574,8 @@
 	font-size:var(-font-14);
 	padding:15px 0px 15px 30px;
 	border-bottom:1px solid #eee5e1;
+	display: flex;
+	align-items: center;
 }
 
 .video-intro-widget .lower-content .intro-list li .icon{
@@ -2800,7 +2802,6 @@
 
 .course-tabs .target-list li{
 	position:relative;
-	font-weight:700;
 	font-size:var(--font-16);
 	color:var(--dark-color);
 	padding-left:var(--padding-left-30);
@@ -4600,7 +4601,7 @@
 }
 
 .contact-map-section .contact-list li a:hover{
-	color:var(--main-color-two);
+	color: #087f7b;
 }
 
 .contact-map-section .contact-list li:last-child{
@@ -8485,8 +8486,8 @@ section.news-section .theme-btn {
 .Flex_cls {
     border: 1px solid #000;
     border-radius: 50%;
-    width: 140px !important;
-    height: 140px !important;
+    width: 115px !important;
+    height: 115px !important;
     text-align: center;
     padding: 18px !important;
     margin: 0 auto;
@@ -8525,7 +8526,6 @@ section.news-section .theme-btn {
     margin-top: 70px;
 }
 /* Common feature circle */
-
 
 .courses_page{
 	padding: 50px 0px 50px 0px;

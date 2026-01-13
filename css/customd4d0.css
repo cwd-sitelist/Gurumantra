@@ -311,8 +311,8 @@ rs-layer h1 {
 }
 
 .contact-form-section form input[type=submit]:hover {
-	color: var(--main-color);
-	background-color: var(--color-five);
+	color:  #fff;
+	background-color: var(--main-color) ;
 }
 
 .comment-form .mb-0 {
