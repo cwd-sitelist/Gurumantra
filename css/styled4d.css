@@ -2433,7 +2433,7 @@
 
 .course-detail-section{
 	position:relative;
-	padding:60px 0px 0px;
+	padding:30px 0px 0px;
 }
 
 .course-detail-section .content-column{
@@ -2776,7 +2776,7 @@
 	display:block;
 	font-size:var(--font-16);
 	color:var(--dark-color);
-	font-family:var(--font-family-gilroy);
+	font-family:var(--font-family-roboto);
 }
 
 .course-tabs .required-column .required-text:before{
