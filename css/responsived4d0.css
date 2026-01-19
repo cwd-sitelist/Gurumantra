@@ -491,8 +491,8 @@
 	}
 	
 	.main-header .outer-box{
-		float:left;
-		padding:12px 0px;
+		float:right;
+		padding:0px 0px;
 	}
 	
 	.fact-counter .counter-column .inner .content{
@@ -643,6 +643,30 @@
 }
 
 @media only screen and (max-width: 599px){
+	.slider-main{
+		
+	visibility: visible;
+    background: transparent;
+    padding: 0px;
+    margin: 0px auto;
+    top: 75px;
+    bottom: 0px;
+    width: 320px;
+    height: 300px;
+    position: absolute;
+    overflow: visible;
+    left: 0px;
+	}
+	.btn-style-thirteen .txt {
+    position: relative;
+    z-index: 1;
+    font-size: 11px;
+    }
+	.social-box-2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 	
 	h2{
 		font-size:var(--font-28);

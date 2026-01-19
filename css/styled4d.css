@@ -8530,3 +8530,17 @@ section.news-section .theme-btn {
 .courses_page{
 	padding: 50px 0px 50px 0px;
 }
+
+.slider-main{
+	visibility: visible;
+    background: transparent;
+    padding: 0px;
+    margin: 0px auto;
+    top: -102px;
+    bottom: 0px;
+    width: 320px;
+    height: 300px;
+    position: absolute;
+    overflow: visible;
+    left: 0px;
+}
