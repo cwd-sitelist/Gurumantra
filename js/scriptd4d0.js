@@ -540,9 +540,31 @@ $(window).on('scroll load', function () {
 });
 
 
+
+
+
+
+
  /* =======================================================================================
-   tab and accordian
-   ========================================================================================*/ 
+      salary roi calculate 
+ ========================================================================================*/ 
+    function calculateROI() {
+  const salary = Number(document.getElementById("currentSalary").value);
+  const investment = Number(document.getElementById("investment").value);
+  const increase = Number(document.getElementById("increase").value);
 
- 
+  if (!salary || !investment || !increase) {
+    document.getElementById("result").innerHTML =
+      "Please fill in all fields.";
+    return;
+  }
 
+  const newSalary = salary + (salary * increase / 100);
+  const annualGain = newSalary - salary;
+  const roi = ((annualGain - investment) / investment) * 100;
+
+  document.getElementById("result").innerHTML =
+    `New Salary: ₹${newSalary.toFixed(2)} <br>
+     Annual Gain: ₹${annualGain.toFixed(2)} <br>
+     ROI: ${roi.toFixed(2)}%`;
+}
