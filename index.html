@@ -697,15 +697,14 @@
 					data-id="537829bd" data-element_type="column">
 					<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-2af8b761 elementor-widget elementor-widget-gurumantra_about_us_v4"
-							data-id="2af8b761" data-element_type="widget"
-							data-widget_type="gurumantra_about_us_v4.default">
+							data-id="2af8b761" data-element_type="widget" data-widget_type="gurumantra_about_us_v4.default">
 							<div class="elementor-widget-container">
-
+		
 								<!-- Skill Section -->
 								<section class="skill-section skill-box-ns">
 									<div class="container">
 										<div class="row clearfix">
-
+		
 											<!-- Content Column -->
 											<div class="content-column col-lg-6 col-md-12 col-sm-12">
 												<div class="inner-column">
@@ -731,16 +730,17 @@
 														</div>
 													</div>
 													<div class="buttons-box">
-														<a href="#" class="theme-btn btn-style-thirteen"
-															target="_blank"><span class="txt">Enquiry Now <i
+														<a href="#" class="theme-btn btn-style-thirteen" target="_blank"><span
+																class="txt">Enquiry Now <i
 																	class="fa fa-arrow-circle-right"></i></span></a>
 													</div>
 												</div>
 											</div>
-
+		
 											<!-- Image Column -->
 											<div class="image-column col-lg-6 col-md-12 col-sm-12">
 												<div class="inner-column">
+													
 													<div class="image wow fadeInRight" data-wow-delay="0ms"
 														data-wow-duration="1500ms">
 														<img decoding="async" src="image/home_about.webp" alt="" />
@@ -749,15 +749,14 @@
 														data-wow-duration="1500ms">
 														<div class="box-inner">
 															<div class="skill-box">
-
+		
 																<!-- Skills -->
 																<div class="skills-three">
 																	<!-- Skill Item -->
 																	<div class="skill-item">
 																		<div class="skill-header clearfix">
 																			<span class="icon">
-																				<i aria-hidden="true"
-																					class="fas fa-phone-alt"
+																				<i aria-hidden="true" class="fas fa-phone-alt"
 																					style="transform: rotate(91deg)"></i>
 																			</span>
 																			<div class="skill-title">Internship
@@ -854,25 +853,24 @@
 																	</div>
 																</div>
 															</div>
-
 															<div class="video-box">
-																<iframe src="https://www.youtube.com/embed/FYErehuSuuw?si=iKhil_YFBPGc8LiA"
-                                                frameborder="0" allowfullscreen="" allowtransparency=""
-                                                allow="autoplay" height="200%"></iframe>
+																<iframe
+																	src="https://www.youtube.com/embed/FYErehuSuuw?si=iKhil_YFBPGc8LiA"
+																	frameborder="0" allowfullscreen="" allowtransparency=""
+																	allow="autoplay" height="200%"></iframe>
 																<!-- <img decoding="async" src="image/video-3.webp" alt="" /> -->
 																<!-- <div class="overlay-box">
-																	<a href="https://www.youtube.com/embed/FYErehuSuuw?si=GydRiwuQRBj1Vhtg"
-																		class="lightbox-image play-box"><span
-																			class="fa fa-play"><i
-																				class="ripple"></i></span></a>
-																</div> -->
-														</div>
+																			<a href="https://www.youtube.com/embed/FYErehuSuuw?si=GydRiwuQRBj1Vhtg"
+																				class="lightbox-image play-box"><span
+																					class="fa fa-play"><i
+																						class="ripple"></i></span></a>
+																		</div>  -->
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
 								</section>
 								<!-- End Skill Section -->
 								<!-- End Experiance Section -->
@@ -1416,21 +1414,56 @@
 		</section>
 
 
-		<div class="roi-wrapper">
+  <!-- LEFT CONTENT -->
+  <div class="roi-wrapper">
+
   <!-- LEFT CONTENT -->
   <div class="roi-content">
-    <h2>We focus on building strong skills, real-world experience, and confidence that grow with you throughout your career.</h2>
-    
+    <h2>See Your <span>Career Path</span></h2>
+    <p>From where you are to where you want to be</p>
+
+    <div class="career-card">
+      <div class="career-row">
+        <span class="tag">B.E Graduate</span>
+        <span class="arrow">→</span>
+        <span class="tag highlight">Software Engineer</span>
+      </div>
+
+      <div class="meta">
+        <span>Zoho</span>
+        <span>Freshworks</span>
+        <span>CTS</span>
+        <span class="salary">₹5–12L</span>
+        <span class="time">6–9 months</span>
+      </div>
+    </div>
+
+    <div class="career-card">
+      <div class="career-row">
+        <span class="tag">Career Switcher</span>
+        <span class="arrow">→</span>
+        <span class="tag highlight">Data Analyst</span>
+      </div>
+
+      <div class="meta">
+        <span>TCS</span>
+        <span>Infosys</span>
+        <span>HCL</span>
+        <span class="salary">₹6–14L</span>
+        <span class="time">8–12 months</span>
+      </div>
+    </div>
+
   </div>
 
   <!-- RIGHT FORM -->
   <div class="roi-form">
     <h3>Calculate ROI</h3>
 
-    <label>Current Annual Salary (£)</label>
+    <label>Current Annual Salary (₹)</label>
     <input type="number" id="currentSalary" placeholder="e.g. 25000">
 
-    <label>Course / Investment Cost (£)</label>
+    <label>Course / Investment Cost (₹)</label>
     <input type="number" id="investment" placeholder="e.g. 3000">
 
     <label>Expected Salary Increase (%)</label>
@@ -1832,7 +1865,7 @@
 	</script>
 	<script>
 		function changetext(){
-    const aboutme =['frontend developer', 'js developer','angular developr', 'full stack developer'];
+    const aboutme =['frontend developer', 'js developer','angular developer', 'full stack developer'];
     const typingspeed = 100
     const erasespeed = 50;
     const pausetime = 1500;

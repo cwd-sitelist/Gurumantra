@@ -8876,15 +8876,12 @@ section.news-section .theme-btn {
   padding: 40px;
   background: #f8f8f8;
 }
-
 .roi-content {
   width: 55%;
   
 }
-
 .roi-content h2 {
   font-size: 32px;
-  padding: 200px 0px;
   align-items: center;
   text-align: center;
   line-height: 1.5;
@@ -8962,6 +8959,84 @@ section.news-section .theme-btn {
   .roi-form {
     width: 100%;
   }
+}
+.roi-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.roi-content h2 span {
+  background: linear-gradient(90deg, #0abab4, #087f7b);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.roi-content p {
+  color: #000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.career-card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+ border: 1px solid #eef1f6;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  max-width: 720px;
+  transition: all 0.3s ease;
+}
+
+.career-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.tag {
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 20px;
+  color:#000;
+}
+
+.tag.highlight {
+  background: linear-gradient(90deg, #0abab4, #087f7b);
+  color: #fff;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #087f7b;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  justify-content: center;
+  color: #000;
+}
+
+.meta span {
+  background: rgba(255,255,255,0.08);
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-family: var(--font-family-roboto);
+}
+
+.salary {
+  color: var(--main-color);
+}
+
+.time {
+  color: #087f7b;
 }
 /* video  */
 

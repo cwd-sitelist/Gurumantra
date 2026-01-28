@@ -32,7 +32,7 @@
 	
 	headerStyle();
 	
-	
+
 	//Submenu Dropdown Toggle
 	if($('.main-header li.dropdown ul').length){
 		$('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
@@ -538,11 +538,6 @@ function headerStyle() {
 $(window).on('scroll load', function () {
   headerStyle();
 });
-
-
-
-
-
 
 
  /* =======================================================================================
