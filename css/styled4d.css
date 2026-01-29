@@ -3259,8 +3259,8 @@
 .category-widget .widget-content,
 .av-widget{
 	position:relative;
-	padding:35px 35px;
-	background-color:var(--color-three);
+	padding: 15px 35px;
+	background-color:#86f7ea;
 }
 
 .cat-list{
@@ -7923,17 +7923,13 @@ section.news-section .theme-btn {
 	display:none;
 	background-color:#dddddd;
 }
-
-
-
 .skill-section .image-column .video-box{
 	position:absolute;
 	right:0px;
 	top:0px;
-	width:210px;
+	width:244px;
 	height:122px;
 }
-
 .skill-section .image-column .overlay-box{
 	position:absolute;
 	left:0px;
@@ -7942,7 +7938,6 @@ section.news-section .theme-btn {
 	bottom:0px;
 	text-align:center;
 }
-
 .skill-section .image-column .overlay-box .play-box{
 	position:absolute;
 	left:50%;
@@ -7958,7 +7953,6 @@ section.news-section .theme-btn {
 	font-family: 'Roboto', sans-serif;
 	z-index: 11;
 }
-
 .skill-section.skill-box-ns .image-column .overlay-box .play-box .fa {
     position: relative;
     color: #ffffff;
@@ -8432,7 +8426,7 @@ section.news-section .theme-btn {
 
 
 .logo_section{
-	 padding: 50px 0px 50px 0px;
+	 padding: 10px 0px 10px 0px;
 	 width:51vw;
 	 margin: auto;
 	 text-align: center;
@@ -8546,7 +8540,7 @@ section.news-section .theme-btn {
 /* Header */
 .journey-header {
     padding-bottom: 20px;
-    border-bottom: 1px solid #edf0f3;
+    border-bottom: 1px solid #0abab4;
 }
 
 .journey-avatar {
@@ -8748,7 +8742,7 @@ section.news-section .theme-btn {
 /* web development  baanner */
 
 .hero {
-  padding: 60px 40px;
+  padding: 40px 40px 0px ;
 }
 
 .hero-container {
@@ -8795,6 +8789,7 @@ section.news-section .theme-btn {
 
 .badge.small {
   font-size: 18px;
+  padding: 11px 14px;
 }
 
 .info-bar {
@@ -9072,7 +9067,7 @@ section.news-section .theme-btn {
 .tabs-wrapper {
   display: flex;
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 10px auto;
   background: linear-gradient(135deg, #0abab4 ,#087f7b,#000);
   border-radius: 30px;
   padding: 30px;
@@ -9176,7 +9171,7 @@ section.news-section .theme-btn {
 }
 
 .pricing-section {
-  padding: 80px 20px;
+  padding: 50px 20px;
   background: #f6fffe;
   font-family: Arial, sans-serif;
 }
@@ -9335,4 +9330,21 @@ section.news-section .theme-btn {
   min-height: 100%;
   transform: translate(-50%, -50%);
   border: 0;
+}
+#tab-btn {
+  display: inline-flex;
+}
+.download-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding-bottom: 20px;
+}
+.para_txt{
+	color:#000;
+	font-size:16px;
+   	line-height:1.5;
+	font-size: var(--font-family-roboto);
+
+
 }

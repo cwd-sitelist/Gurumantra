@@ -17263,6 +17263,7 @@ select.tutor-form-control,
 
 .tutor-form-check-input[type=checkbox].tutor-form-check-circle {
     border-radius: 50%
+    
 }
 
 .tutor-form-check-input[type=checkbox]:checked {
@@ -21446,6 +21447,7 @@ input:checked+label .tutor-form-check-input-radio,
 
 .tutor-list-item label input[type=checkbox] {
     margin-right: 16px
+    
 }
 
 .tutor-progress-bar {
