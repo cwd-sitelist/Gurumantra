@@ -581,9 +581,9 @@ h2{
 }
 
 h3{
-	line-height:1.3em;
+	line-height:1.9;
 	font-weight:700;
-	font-size:var(--font-30);
+	font-size:var(--font-20);
 }
 
 h4{

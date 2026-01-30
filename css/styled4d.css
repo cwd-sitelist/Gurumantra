@@ -9409,3 +9409,87 @@ section.news-section .theme-btn {
 .faq-item.active .icon {
   transform: rotate(45deg);
 }
+
+
+/* contact */
+.contact-section {
+  background: #f6fffe;
+  padding: 60px 20px;
+}
+
+/* Grid Container */
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Card Design */
+.contact-card {
+  background: #fff;
+  padding: 40px 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+
+
+/* Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #0abab4;
+  color: #000;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.icon-circle img{
+	filter: invert(1);
+	width: 30px;
+	height: 30px;
+}
+.contact-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  color: #0abab4;
+  text-decoration: underline;
+}
+.icon-circle h3{
+	padding-bottom: 20px;
+}
+
+
+
+/* ======================
+   TABLET VIEW
+   ====================== */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ======================
+   MOBILE VIEW
+   ====================== */
+@media (max-width: 576px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+  }
+}
