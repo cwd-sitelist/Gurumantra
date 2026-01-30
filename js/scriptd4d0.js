@@ -87,6 +87,7 @@
 	}
 	
 	
+	
 	//Gallery Filters
 	if($('.filter-list').length){
 		$('.filter-list').mixItUp({});
@@ -136,28 +137,18 @@
 			}
 		});	
 	}
-	//Accordion Box
-	function acordionFAQ2ActiveJS($scope, $) {
-		$(".accordion-box").on('click', '.acc-btn', function() {
-			
-			var outerBox = $(this).parents('.accordion-box');
-			var target = $(this).parents('.accordion');
-			
-			if($(this).hasClass('active')!==true){
-				$(outerBox).find('.accordion .acc-btn').removeClass('active');
+	//LightBox / Fancybox
+	if($('.lightbox-image').length) {
+		$('.lightbox-image').fancybox({
+			openEffect  : 'fade',
+			closeEffect : 'fade',
+			helpers : {
+				media : {}
 			}
-			
-			if ($(this).next('.acc-content').is(':visible')){
-				return false;
-			}else{
-				$(this).addClass('active');
-				$(outerBox).children('.accordion').removeClass('active-block');
-				$(outerBox).find('.accordion').children('.acc-content').slideUp(300);
-				target.addClass('active-block');
-				$(this).next('.acc-content').slideDown(300);	
-			}
-		});	
+		});
 	}
+	
+
 	
 	
 	//Custom Seclect Box
@@ -186,7 +177,7 @@
 				dots: true,
 
 				autoplay: true,
-				autoplayTimeout: 6000,
+				autoplayTimeout: 2000,
 				autoplayHoverPause: true,
 
 				smartSpeed: 600,
@@ -239,9 +230,49 @@
 			}
 		});    		
 	}
-	
-	
-	
+
+	// Tab inner page
+	const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabButtons.forEach(b => b.classList.remove("active"));
+      tabContents.forEach(c => c.classList.remove("active"));
+
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.tab).classList.add("active");
+    });
+  });
+  // price Tab inner page
+     const priceTabs = document.querySelectorAll(".price-tab");
+  const priceContents = document.querySelectorAll(".price-content");
+
+  priceTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      priceTabs.forEach(t => t.classList.remove("active"));
+      priceContents.forEach(c => c.classList.remove("active"));
+
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.price).classList.add("active");
+    });
+  });
+
+  // Accordian	
+  document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const faqItem = button.parentElement;
+
+    document.querySelectorAll(".faq-item").forEach(item => {
+      if (item !== faqItem) {
+        item.classList.remove("active");
+      }
+    });
+
+    faqItem.classList.toggle("active");
+  });
+});
+
 	// Testimonial Carousel
 	$(window).on('load', function () {
 
@@ -255,7 +286,7 @@
 				dots: true,
 
 				autoplay: true,
-				autoplayTimeout: 6000,
+				autoplayTimeout: 2000,
 				autoplayHoverPause: true,
 
 				smartSpeed: 600,
@@ -292,6 +323,9 @@
 			}
 		});
 	}
+
+
+	
 	
 	
 	// Sponsors Item Carousel
@@ -409,16 +443,6 @@
 	
 	
 	
-	//LightBox / Fancybox
-	if($('.lightbox-image').length) {
-		$('.lightbox-image').fancybox({
-			openEffect  : 'fade',
-			closeEffect : 'fade',
-			helpers : {
-				media : {}
-			}
-		});
-	}
 	
 	
 	
@@ -549,3 +573,6 @@ $(window).on('scroll load', function () {
      Annual Gain: ₹${annualGain.toFixed(2)} <br>
      ROI: ${roi.toFixed(2)}%`;
 }
+
+
+ 
