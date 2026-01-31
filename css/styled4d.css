@@ -8526,13 +8526,13 @@ section.news-section .theme-btn {
 
 /* Card */
 .journey-card {
-    background: #fff;
+   
     border-radius: 14px;
     padding: 28px 22px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     text-align: center;
     border: 1px solid #eef1f4;
-	background-color: #ddd;
+	background-color: #92d0c6;
 
 
 }
@@ -9403,7 +9403,7 @@ section.news-section .theme-btn {
 /* Answer open */
 .faq-item input:checked ~ .faq-answer {
   max-height: 300px;
-  padding: 18px;
+ 
 }
 
 /* Change + to - */
