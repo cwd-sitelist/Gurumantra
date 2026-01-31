@@ -948,6 +948,7 @@
 
 .course-block .inner-box{
 	position:relative;
+    border: 1px solid #eee;
 }
 
 .course-block .inner-box .image{
@@ -969,7 +970,7 @@
 .course-block .inner-box .lower-content{
 	position:relative;
 	text-align:center;
-	padding:20px 15px 0px;
+	padding:20px 15px 20px;
 }
 
 .course-block .inner-box h5{

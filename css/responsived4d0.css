@@ -761,7 +761,7 @@
 	}
 	
 	.page-title{
-		padding:100px 0px 130px;
+		padding:100px 0px 60px;
 	}
 	
 	.experiance-section .blocks-column .column:nth-child(2) .feature-block:nth-child(1){
@@ -1571,5 +1571,81 @@
 .mobile-menu .nav-logo img {
     max-width: 229px;
 }
+.services-section {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0px 30px;
+}
+.roi-content h2{
+	font-size: 24px;
+}
+.skill-section .content-column .inner-column{
+	padding-right: 0px;
 
+}
+.skill-section .phone-box .box-inner .icon{
+	font-size: 25px;
+}
+.skill-section .phone-box .box-inner .icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    color: #0abab4;
+    transform: rotate(91deg);
+    font-size: 28px;
+    text-align: center !important;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: #eee;
+    line-height: 52px;
+}
+
+element.style {
+}
+.elementor a {
+    box-shadow: none;
+    text-decoration: none;
+}
+button, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none !important;
+}
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+.btn-style-thirteen {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 88px;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    font-family: 'Roboto', sans-serif;
+    background: #0abab4;
+    background: -webkit-linear-gradient(to right, #087f7b 0%, #0abab4 100%);
+    background: -moz-linear-gradient(to right, #0abab4 0%, #087f7b 100%);
+    background: linear-gradient(to right, #0abab4 0%, #087f7b 100%);
+}
+.courses-page-section
+ {
+    position: relative;
+    padding: 40px 0px 40px;
+}
+.page-title .text {
+    opacity: 0.90;
+    font-size: var(--font-18);
+    color: var(--white-color);
+    margin-bottom: 0px;
+}
 }
