@@ -229,8 +229,7 @@
     </section>
 
 
-
-    <div class="courses-page-section">
+<div class="courses-page-section">
 
         <div class="tutor-wrap tutor-wrap-parent tutor-courses-wrap tutor-container course-archive-page"
             data-tutor_courses_meta="{&quot;course_filter&quot;:true,&quot;supported_filters&quot;:{&quot;search&quot;:&quot;search&quot;,&quot;category&quot;:&quot;category&quot;,&quot;tag&quot;:&quot;tag&quot;,&quot;difficulty_level&quot;:&quot;difficulty_level&quot;,&quot;price_type&quot;:&quot;price_type&quot;},&quot;loop_content_only&quot;:false,&quot;column_per_row&quot;:&quot;3&quot;,&quot;course_per_page&quot;:&quot;12&quot;,&quot;show_pagination&quot;:true}">
@@ -256,19 +255,19 @@
                                     <li class="tutor-list-item">
                                         <label>
                                            <input type="checkbox" 
-                                                name="tutor-course-filter-tag" value="53">
+                                                name="tutor-course-filter-tag" value="ai">
                                             Ai - Courses</label>
                                     </li>
                                     <li class="tutor-list-item">
                                         <label>
                                             <input type="checkbox" 
-                                                name="tutor-course-filter-tag" value="53">
+                                                name="tutor-course-filter-tag" value="development">
                                             Development</label>
                                     </li>
                                     <li class="tutor-list-item">
                                         <label>
                                            <input type="checkbox" 
-                                                name="tutor-course-filter-tag" value="53">
+                                                name="tutor-course-filter-tag" value="testing">
                                              Testing </label>
                                     </li>
 
@@ -279,8 +278,10 @@
                                             Software Skill </label>
                                     </li>
                                 </div>
+                               
                             </div>
                             <div>
+                             
                                 <div class="av-widget">
                                     <h4>Price</h4>
                                     <label>
@@ -299,7 +300,9 @@
                         </form>
                     </div>
                 </div>
+
                 <!--  -->
+
                 <div class="tutor-col-xl-9 ">
                     <div>
 
@@ -368,7 +371,9 @@
                     </div>
                     <div class="tutor-pagination-wrapper-replaceable" tutor-course-list-container="">
                         <div class="tutor-course-list tutor-grid tutor-grid-3">
-                            <div class="tutor-card tutor-course-card">
+                            <div class="tutor-card tutor-course-card"  data-category="development"
+     data-price="paid"
+     data-title="web development">
                                 <div class="course-block">
                                     <div class="inner-box">
                                         <div class="image">
@@ -393,7 +398,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tutor-card tutor-course-card">
+                            <div class="tutor-card tutor-course-card"  data-category="development"
+     data-price="paid"
+     data-title="web development">
                                 <div class="course-block">
                                     <div class="inner-box">
                                         <div class="image">
@@ -419,7 +426,9 @@
                                 </div>
 
                             </div>
-                            <div class="tutor-card tutor-course-card">
+                            <div class="tutor-card tutor-course-card"  data-category="development"
+     data-price="paid"
+     data-title="web development">
                                 <div class="course-block">
                                     <div class="inner-box">
                                         <div class="image">
@@ -904,6 +913,125 @@
 	<script type="text/javascript" src="js/jquery.counterup.min431f.js"></script>
 	<script type="text/javascript" src="js/scriptd4d0.js"></script>
 	<script type="text/javascript" src="js/rs6.min097f.js" defer async></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+ 
+    function getCourses() {
+        return Array.from(document.querySelectorAll(".tutor-course-card"));
+    }
+ 
+    const tagCheckboxes = document.querySelectorAll(
+        'input[name="tutor-course-filter-tag"]'
+    );
+    const priceCheckboxes = document.querySelectorAll(
+        'input[name="tutor-course-filter-price"]'
+    );
+    const searchInput = document.querySelector('input[name="keyword"]');
+    const orderSelect = document.querySelector('select[name="course_order"]');
+    const courseContainer = document.querySelector(".tutor-course-list");
+ 
+    function filterAndSortCourses() {
+        const courses = getCourses();
+ 
+        const selectedTags = Array.from(tagCheckboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.value.toLowerCase());
+ 
+        const selectedPrices = Array.from(priceCheckboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.value.toLowerCase());
+ 
+        const keyword = searchInput.value.toLowerCase().trim();
+ 
+        courses.forEach(course => {
+            const category = (course.dataset.category || "").toLowerCase();
+            const price = (course.dataset.price || "").toLowerCase();
+            const text = course.innerText.toLowerCase();
+ 
+            const tagMatch =
+                selectedTags.length === 0 ||
+                selectedTags.includes(category);
+ 
+            const priceMatch =
+                selectedPrices.length === 0 ||
+                selectedPrices.includes(price);
+ 
+            const searchMatch =
+                keyword === "" ||
+                text.includes(keyword);
+ 
+            course.style.display =
+                tagMatch && priceMatch && searchMatch ? "" : "none";
+        });
+ 
+        applySorting();
+    }
+ 
+    function applySorting() {
+        if (!orderSelect) return;
+ 
+        const order = orderSelect.value;
+        const courses = getCourses().filter(
+            c => c.style.display !== "none"
+        );
+ 
+        courses.sort((a, b) => {
+            const titleA = a.innerText.toLowerCase();
+            const titleB = b.innerText.toLowerCase();
+ 
+            const dateA = new Date(a.dataset.date || 0);
+            const dateB = new Date(b.dataset.date || 0);
+ 
+            switch (order) {
+                case "course_title_az":
+                    return titleA.localeCompare(titleB);
+                case "course_title_za":
+                    return titleB.localeCompare(titleA);
+                case "oldest_first":
+                    return dateA - dateB;
+                case "newest_first":
+                default:
+                    return dateB - dateA;
+            }
+        });
+ 
+        courses.forEach(course => courseContainer.appendChild(course));
+    }
+ 
+    // 🔹 Checkbox filters
+    tagCheckboxes.forEach(cb =>
+        cb.addEventListener("change", filterAndSortCourses)
+    );
+ 
+    priceCheckboxes.forEach(cb =>
+        cb.addEventListener("change", filterAndSortCourses)
+    );
+ 
+    // 🔹 Text search
+    if (searchInput) {
+        searchInput.addEventListener("keyup", filterAndSortCourses);
+    }
+ 
+    // 🔹 Hidden select sorting
+    if (orderSelect) {
+        orderSelect.addEventListener("change", filterAndSortCourses);
+    }
+ 
+    // 🔹 Custom Tutor dropdown sync
+    document.querySelectorAll("[tutor-dropdown-item]").forEach(item => {
+        item.addEventListener("click", function () {
+            const key = this.getAttribute("data-key");
+            const label = this.innerText.trim();
+ 
+            orderSelect.value = key;
+            document.querySelector("[tutor-dropdown-label]").innerText = label;
+ 
+            orderSelect.dispatchEvent(new Event("change", { bubbles: true }));
+        });
+    });
+ 
+});
+    </script>
 	
 </body>
 

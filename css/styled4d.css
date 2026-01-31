@@ -9351,10 +9351,9 @@ section.news-section .theme-btn {
 
 /* Accordian */
 .faq-section {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  padding: 40px 20px;
-  font-family: var(--font-family-gilroy-regular);
+  font-family: Arial, sans-serif;
 }
 
 .faq-section h2 {
@@ -9362,52 +9361,54 @@ section.news-section .theme-btn {
   margin-bottom: 30px;
 }
 
+/* FAQ Item */
 .faq-item {
   border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
+/* Hide checkbox */
+.faq-item input {
+  display: none;
+}
+
+/* Question */
 .faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 18px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: left;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font-family-roboto);
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #f9f9f9;
 }
 
-.faq-question:hover {
-  color: #0abab4;
+/* Plus icon */
+.faq-question .icon::before {
+  content: "+";
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
+/* Answer hidden */
 .faq-answer {
   max-height: 0;
   overflow: hidden;
+  padding: 0 18px;
   transition: max-height 0.4s ease;
 }
 
-.faq-answer p {
-  padding: 0 18px 18px;
-  margin: 0;
-  color: #555;
+/* Answer open */
+.faq-item input:checked ~ .faq-answer {
+  max-height: 300px;
+  padding: 18px;
 }
 
-.icon {
-  font-size: 22px;
-  transition: transform 0.3s ease;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 200px;
-}
-
-.faq-item.active .icon {
-  transform: rotate(45deg);
+/* Change + to - */
+.faq-item input:checked + .faq-question .icon::before {
+  content: "−";
 }
 
 
@@ -9493,3 +9494,8 @@ section.news-section .theme-btn {
     padding: 30px 20px;
   }
 }
+select:has(option[value=""]:checked) {
+  color: #999;
+}
+
+

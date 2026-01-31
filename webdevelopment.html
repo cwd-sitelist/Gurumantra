@@ -263,14 +263,16 @@
                     </div>
 
                     <label>What is your current profession? *</label>
-                    <select>
+                    <select >
+                        <option value="" disabled selected>-- Select an option --</option>
                         <option>student</option>
                         <option>Non-It</option>
                         <option>Career-Gap</option>
                         <option>Working proffesional</option>
                     </select>
                      <label>Choose the Course That Shapes Your Future</label>
-                    <select>
+                    <select >
+                        <option value="" disabled selected>-- Select an option --</option>
                         <option>Full Stack Development</option>
                         <option>Data Science </option>
                         <option>Data Analyst</option>
@@ -461,15 +463,7 @@
                                                     <div class="tutor-color-muted">
                                                     </div>
                                                 </div>
-                                                <form action="javascript:void;" method="post"
-                                                    enctype="multipart/form-data">
-                                                    <button type="submit" name="add-to-cart" value="963"
-                                                        class="tutor-btn tutor-btn-primary tutor-btn-lg tutor-btn-block tutor-mt-24 tutor-add-to-cart-button tutor-open-login-modal"
-                                                        fdprocessedid="u7hjv8">
-                                                        <span class="btn-icon tutor-icon-cart-filled"></span>
-                                                        <span>Enquiry Now</span>
-                                                    </button>
-                                                </form>
+                                             
                                             </div>
 
                                         </div>
@@ -974,50 +968,96 @@
 
             <div class="tabs-wrapper">
                 <div class="tabs-left">
-                    <button class="tab-btn active" data-tab="tab1">Module 1</button>
-                    <button class="tab-btn" data-tab="tab2">Module 2</button>
-                    <button class="tab-btn" data-tab="tab3">Module 3</button>
-                    <button class="tab-btn" data-tab="tab4">Module 4</button>
-                    <button class="tab-btn" data-tab="tab5">Module 5</button>
+                    <button class="tab-btn active" data-tab="tab1">HTML</button>
+                    <button class="tab-btn" data-tab="tab2">CSS</button>
+                    <button class="tab-btn" data-tab="tab3">JAVA SCRIPT</button>
+                    <button class="tab-btn" data-tab="tab4">ANGULAR</button>
+                    <button class="tab-btn" data-tab="tab5">JAVA</button>
                 </div>
 
                 <div class="tabs-right">
                     <div class="tab-content active" id="tab1">
-                        <h3>Module 1</h3>
-                        <p>Build your foundational programming skills with Java.</p>
+                        <h3>HTML</h3>
+                       
 
                         <ul class="skills">
-                            <li>Java Syntax & Control Flow</li>
-                            <li>Object-Oriented Programming</li>
-                            <li>Collections & Generics</li>
-                            <li>Multithreading</li>
-                            <li>Java 8–21 Features</li>
+                            <li>Introduction to HTML</li>
+                            <li>Basic HTML Structure</li>
+                            <li>HTML Elements and Attributes</li>
+                            <li>Text Formatting and Styles</li>
+                            <li>Lists</li>
+                            <li>Tables</li>
+                            <li>Forms</li>
+                            <li>Multimedia in HTML</li>
+                            <li>HTML5 New Features</li>
                         </ul>
-
                     </div>
 
                     <div class="tab-content" id="tab2">
-                        <h3>Module 2</h3>
-                        <p>Advanced Java concepts and real-time examples.</p>
+                        <h3>CSS</h3>
+                        
+                         <ul class="skills">
+                            <li>Introduction to CSS</li>
+                            <li>Basic Styling</li>
+                            <li>Box Model</li>
+                            <li>Positioning and Layout</li>
+                            <li>Responsive Design</li>
+                        </ul>
                     </div>
 
                     <div class="tab-content" id="tab3">
-                        <h3>Module 3</h3>
-                        <p>Spring Framework & Spring Boot basics.</p>
+                        <h3>JavaScript</h3>
+                    
+                         <ul class="skills">
+                            <li>Introduction to JavaScript</li>
+                            <li>Basic JavaScript Syntax</li>
+                            <li>Functions</li>
+                            <li>Arrays</li>
+                            <li>Introduction to the DOM</li>
+                            <li>DOM Events</li>
+                            <li>Modifying DOM Elements</li>
+                            <li>Browser APIs</li>
+                        </ul>
                     </div>
 
                     <div class="tab-content" id="tab4">
-                        <h3>Module 4</h3>
-                        <p>Database, JDBC, and Hibernate.</p>
+                        <h3>Angular</h3>
+                       
+                        
+                        <ul class="skills">
+                            <li>Introduction to TypeScript</li>
+                            <li>Introducing Angular</li>
+                            <li>Components  and Modules in Angular</li>
+                            <li>Binding</li>
+                            <li>Directives</li>
+                            <li>Template Driven Forms</li>
+                            <li>Reactive Forms</li>
+                            <li>Services and Dependency Injection</li>
+                            <li>CRUD Project</li>
+                        </ul>
                     </div>
 
                     <div class="tab-content" id="tab5">
-                        <h3>Module 5</h3>
-                        <p>Microservices & project deployment.</p>
+                        <h3>Java</h3>
+                        
+                          <ul class="skills">
+                            <li>Introduction to Java</li>
+                            <li>Java Syntax and Data Types</li>
+                            <li>Operators and Control Statements</li>
+                            <li>Arrays and Strings</li>
+                            <li>Object-Oriented Programming (OOP) Concepts</li>
+                            <li>Exception Handling</li>
+                            <li>Java Collections Framework</li>
+                            <li>Basic of MYSQL</li>
+                            <li>JDBC</li>
+                           <li>Introduction to Servlet </li>
+                          <li>Servlet Request and Response </li>
+                          <li>State Management Http Protocol</li>
+                        </ul>
                     </div>
-                </div>
-                    
+                </div>   
             </div>
+
                    <div class="download-center">
   <a href="#" class="theme-btn btn-style-thirteen" id="tab-btn">
     <span class="txt">Download PDF <i class="fa fa-arrow-circle-right"></i></span>
@@ -1025,82 +1065,67 @@
 </div>
 
         </section>
-
-        <section class="faq-section">
+<section class="faq-section">
   <h2>Frequently Asked Questions</h2>
 
   <div class="faq-item">
-    <button class="faq-question">
+    <input type="checkbox" id="faq1">
+    <label class="faq-question" for="faq1">
       What is Full Stack Web Development?
-      <span class="icon">+</span>
-    </button>
+      <span class="icon"></span>
+    </label>
     <div class="faq-answer">
-      <p>Full Stack Web Development is the practice of working on both frontend (client-side) and backend (server-side) of web applications. It includes HTML, CSS, JavaScript for frontend and Node.js, Express.js, MongoDB for backend. Full stack developers can build complete web applications independently from scratch.</p>
+      <p>
+        Full Stack Web Development is the practice of working on both frontend
+        and backend of web applications. It includes HTML, CSS, JavaScript,
+        Node.js, Express.js, and MongoDB.
+      </p>
     </div>
   </div>
 
   <div class="faq-item">
-    <button class="faq-question">
-      Do I need any coding experience to join this Full Stack course in Chennai?
-      <span class="icon">+</span>
-    </button>
+    <input type="checkbox" id="faq2">
+    <label class="faq-question" for="faq2">
+      Do I need any coding experience to join this course?
+      <span class="icon"></span>
+    </label>
     <div class="faq-answer">
-      <p>No prior coding experience required. Our Full Stack Web Development course in Chennai starts from absolute basics including HTML, CSS, and programming fundamentals before moving to advanced JavaScript, React, and Node.js. Perfect for beginners, students, and career switchers in Chennai.</p>
+      <p>
+        No prior coding experience required. The course starts from absolute
+        basics and moves to advanced topics.
+      </p>
     </div>
   </div>
 
   <div class="faq-item">
-    <button class="faq-question">
-     What is the duration and schedule of the Full Stack course?
-      <span class="icon">+</span>
-    </button>
+    <input type="checkbox" id="faq3">
+    <label class="faq-question" for="faq3">
+      What is the duration and schedule of the course?
+      <span class="icon"></span>
+    </label>
     <div class="faq-answer">
-      <p>Course duration is 4 months (16 weeks) intensive training plus 1 month paid internship. Total 5 months with 300+ hours of live classes. Weekday batch: 7 PM - 9 PM (suitable for working professionals). Weekend batch: Saturday & Sunday 10 AM - 4 PM. All sessions at our Velachery, Chennai center are recorded.</p>
+      <p>
+        4 months training + 1 month internship. Weekdays and weekend batches
+        available.
+      </p>
     </div>
   </div>
 
-<div class="faq-item">
-    <button class="faq-question">
-      What technologies are covered in the MERN Stack course?
-      <span class="icon">+</span>
-    </button>
-    <div class="faq-answer">
-      <p>MERN Stack includes: MongoDB (NoSQL database), Express.js (backend framework), React.js (frontend library), Node.js (JavaScript runtime). Additionally: HTML5, CSS3, JavaScript ES6+, Git & GitHub, REST APIs, JWT Authentication, Redux, Bootstrap, Tailwind CSS, AWS deployment. Total 18+ technologies.</p>
-    </div>
-  </div>
   <div class="faq-item">
-    <button class="faq-question">
-     What is the Full Stack Development course fee and EMI options?
-      <span class="icon">+</span>
-    </button>
+    <input type="checkbox" id="faq4">
+    <label class="faq-question" for="faq4">
+      What technologies are covered in the MERN Stack?
+      <span class="icon"></span>
+    </label>
     <div class="faq-answer">
-      <p>Course fee is ₹1,49,999 one-time payment (25% discount). Flexible EMI options: ₹16,949/month for 12 months or ₹9,412/month for 24 months. Fee includes all study materials, MongoDB official certification, IITM Pravartak certification, placement support, 1-month paid internship, and lifetime access to course content. No hidden charges.</p>
+      <p>
+        MongoDB, Express.js, React.js, Node.js, HTML, CSS, JavaScript, Git,
+        REST APIs, AWS, and more.
+      </p>
     </div>
   </div>
-  <div class="faq-item">
-    <button class="faq-question">
-     Are Full Stack classes online or offline in Chennai?
-      <span class="icon">+</span>
-    </button>
-    <div class="faq-answer">
-      <p>Both online and offline classes available. Weekday batches: Live online classes via Zoom (7 PM - 9 PM). Weekend batches: Offline at our Velachery Chennai training center (10 AM - 4 PM) with online option. All sessions recorded and available within 24 hours. Hybrid model - switch between online and offline based on your schedule.</p>
-    </div>
-  </div>
-    <div class="faq-item">
-    <button class="faq-question">
-    What certifications will I receive from the Full Stack course?
-      <span class="icon">+</span>
-    </button>
-    <div class="faq-answer">
-      <p>Three valuable certifications: 1 MongoDB Official Certification - Industry-recognized, validates MongoDB skills, valued by employers globally. 2) IITM Pravartak Certification - From IIT Madras Research Park, adds significant credibility. 3) Gurumantra4u Full Stack Developer Certificate - Course completion with skill assessment. All certificates verifiable, digital, and can be added to LinkedIn profile.</p>
-    </div>
-  </div>
+
 </section>
-
-
-
-
-
 
         <ul id="social-sidebar">
             <li>
