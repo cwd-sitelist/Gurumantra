@@ -2285,13 +2285,16 @@ table.course-single-gradebooks a {
         background-color: #fff;
         position: fixed;
         top: 0;
-        right: -100%;
         bottom: 0;
+        right :-100%;
         overflow-y: auto;
         z-index: 999999;
         padding: 32px;
         transition: 300ms ease-in
     }
+    .tutor-course-filter-container.active{
+  right:0px;
+}
 
     .tutor-course-filter-backdrop {
         position: fixed;

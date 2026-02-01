@@ -9499,4 +9499,7 @@ select:has(option[value=""]:checked) {
   color: #999;
 }
 
+.tutor-course-filter-container.active{
+  right:0px;
+} 
 

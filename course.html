@@ -238,8 +238,8 @@
             <div class="tutor-d-block tutor-d-lg-none tutor-mb-32">
                 <div class="tutor-d-flex tutor-align-center tutor-justify-between">
                     <span class="tutor-fs-3 tutor-fw-medium tutor-color-black">Courses</span>
-                    <a href="#" class="tutor-iconic-btn tutor-iconic-btn-secondary tutor-iconic-btn-md"
-                        tutor-toggle-course-filter=""><i class="fa fa-minus-square" aria-hidden="true"></i></a>
+                    <a href="#" class="tutor-iconic-btn tutor-iconic-btn-secondary tutor-iconic-btn-md "
+                        tutor-toggle-course-filter="" id="filterToggleBtn"><i class="fa fa-minus-square" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -311,22 +311,7 @@
                         <!--
 	Note: Do not remove tutor-course-filter attr. It required by _archive.js for filter function.
 !-->
-                        <div style="text-align: right;" class="tutor-course-filter" tutor-course-filter="">
-                            <form style="display: inline-block;">
-                                <select class="tutor-form-select" name="course_order" style="display: none;">
-                                    <option value="newest_first">
-                                        Release Date (newest first) </option>
-                                    <option value="oldest_first">
-                                        Release Date (oldest first) </option>
-                                    <option value="course_title_az">
-                                        Course Title (a-z) </option>
-                                    <option value="course_title_za">
-                                        Course Title (z-a) </option>
-                                </select>
-                                <div class="tutor-form-control tutor-form-select tutor-js-form-select">
-                                    <span class="tutor-form-select-label" tutor-dropdown-label="">Release Date (newest
-                                        first)</span>
-                                    <div class="tutor-form-select-dropdown">
+                                     <div class="tutor-form-select-dropdown">
                                         <div class="tutor-form-select-search tutor-pt-8 tutor-px-8">
                                             <div class="tutor-form-wrap">
                                                 <span class="tutor-form-icon"><i class="tutor-icon-search"
@@ -334,35 +319,6 @@
                                                 <input type="search" class="tutor-form-control"
                                                     placeholder="Search ...">
                                             </div>
-                                        </div>
-                                        <div class="tutor-form-select-options">
-
-                                            <div class="tutor-form-select-option">
-                                                <span tutor-dropdown-item="" data-key="newest_first"
-                                                    class="tutor-nowrap-ellipsis"
-                                                    title="Release Date (newest first)">Release Date (newest
-                                                    first)</span>
-                                            </div>
-
-                                            <div class="tutor-form-select-option">
-                                                <span tutor-dropdown-item="" data-key="oldest_first"
-                                                    class="tutor-nowrap-ellipsis"
-                                                    title="Release Date (oldest first)">Release Date (oldest
-                                                    first)</span>
-                                            </div>
-
-                                            <div class="tutor-form-select-option">
-                                                <span tutor-dropdown-item="" data-key="course_title_az"
-                                                    class="tutor-nowrap-ellipsis" title="Course Title (a-z)">Course
-                                                    Title (a-z)</span>
-                                            </div>
-
-                                            <div class="tutor-form-select-option">
-                                                <span tutor-dropdown-item="" data-key="course_title_za"
-                                                    class="tutor-nowrap-ellipsis" title="Course Title (z-a)">Course
-                                                    Title (z-a)</span>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -1036,7 +992,18 @@
     });
  
 });
+
+   document.addEventListener("DOMContentLoaded", function () {
+            const toggleBtn = document.getElementById("filterToggleBtn");
+            const filterPanel = document.querySelector(".tutor-course-filter-container");
+
+            toggleBtn.addEventListener("click", function () {
+                filterPanel.classList.toggle("active");
+            });
+        });
+
     </script>  
+  
 </body>
 
 </html>
