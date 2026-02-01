@@ -243,7 +243,7 @@
                 </div>
             </div>
 
-            <div class="tutor-row tutor-gx-xl-5  ">
+            <div class="tutor-row tutor-gx-xl-5 ">
                <div class="col-12 col-md-3 tutor-course-filter-container">
                     <div class="tutor-course-filter" tutor-course-filter="">
                         <form>
@@ -311,7 +311,22 @@
                         <!--
 	Note: Do not remove tutor-course-filter attr. It required by _archive.js for filter function.
 !-->
-                                     <div class="tutor-form-select-dropdown">
+                        <div style="text-align: right;" class="tutor-course-filter" tutor-course-filter="">
+                            <form style="display: inline-block;">
+                                <select class="tutor-form-select" name="course_order" style="display: none;">
+                                    <option value="newest_first">
+                                        Release Date (newest first) </option>
+                                    <option value="oldest_first">
+                                        Release Date (oldest first) </option>
+                                    <option value="course_title_az">
+                                        Course Title (a-z) </option>
+                                    <option value="course_title_za">
+                                        Course Title (z-a) </option>
+                                </select>
+                                <div class="tutor-form-control tutor-form-select tutor-js-form-select">
+                                    <span class="tutor-form-select-label" tutor-dropdown-label="">Release Date (newest
+                                        first)</span>
+                                    <div class="tutor-form-select-dropdown">
                                         <div class="tutor-form-select-search tutor-pt-8 tutor-px-8">
                                             <div class="tutor-form-wrap">
                                                 <span class="tutor-form-icon"><i class="tutor-icon-search"
@@ -319,6 +334,35 @@
                                                 <input type="search" class="tutor-form-control"
                                                     placeholder="Search ...">
                                             </div>
+                                        </div>
+                                        <div class="tutor-form-select-options">
+
+                                            <div class="tutor-form-select-option">
+                                                <span tutor-dropdown-item="" data-key="newest_first"
+                                                    class="tutor-nowrap-ellipsis"
+                                                    title="Release Date (newest first)">Release Date (newest
+                                                    first)</span>
+                                            </div>
+
+                                            <div class="tutor-form-select-option">
+                                                <span tutor-dropdown-item="" data-key="oldest_first"
+                                                    class="tutor-nowrap-ellipsis"
+                                                    title="Release Date (oldest first)">Release Date (oldest
+                                                    first)</span>
+                                            </div>
+
+                                            <div class="tutor-form-select-option">
+                                                <span tutor-dropdown-item="" data-key="course_title_az"
+                                                    class="tutor-nowrap-ellipsis" title="Course Title (a-z)">Course
+                                                    Title (a-z)</span>
+                                            </div>
+
+                                            <div class="tutor-form-select-option">
+                                                <span tutor-dropdown-item="" data-key="course_title_za"
+                                                    class="tutor-nowrap-ellipsis" title="Course Title (z-a)">Course
+                                                    Title (z-a)</span>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -338,7 +382,7 @@
                                             <a
                                                 href="fullstackdevelopment.html">
                                                 <img fetchpriority="high" width="300" height="180"
-                                                    src="https://themexriver.com/wp/avarton/wp-content/uploads/2022/01/illustration-8.png"
+                                                    src="image/web_development.webp"
                                                     class="transition-500ms wp-post-image" alt="" decoding="async"> </a>
                                         </div>
                                         <div class="lower-content">
@@ -365,7 +409,7 @@
                                             <a
                                                 href="#">
                                                 <img width="300" height="180"
-                                                    src="https://themexriver.com/wp/avarton/wp-content/uploads/2022/01/illustration-7.png"
+                                                    src="image/data analystics.webp"
                                                     class="transition-500ms wp-post-image" alt="" decoding="async"> </a>
                                         </div>
                                         <div class="lower-content">

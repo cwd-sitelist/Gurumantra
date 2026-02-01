@@ -886,7 +886,7 @@
 	.btn-style-thirteen .txt {
     position: relative;
     z-index: 1;
-    font-size: 11px;
+    font-size: 14px;
     }
 	.social-box-2 {
     display: flex;
@@ -1616,28 +1616,7 @@ button, a:hover, a:focus, a:visited {
 .elementor *, .elementor :after, .elementor :before {
     box-sizing: border-box;
 }
-.btn-style-thirteen {
-    position: relative;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 600;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 50px;
-    padding: 15px 88px;
-    color: #ffffff !important;
-    text-transform: uppercase;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    font-family: 'Roboto', sans-serif;
-    background: #0abab4;
-    background: -webkit-linear-gradient(to right, #087f7b 0%, #0abab4 100%);
-    background: -moz-linear-gradient(to right, #0abab4 0%, #087f7b 100%);
-    background: linear-gradient(to right, #0abab4 0%, #087f7b 100%);
-}
+
 .courses-page-section
  {
     position: relative;
