@@ -295,13 +295,10 @@
 				responsive: {
 					0: { items: 1 },
 					600: { items: 1 },
-					1024: { items: 3 }
+					1024: { items: 4 }
 				}
 			});
-
-
 			owl.trigger('refresh.owl.carousel');
-
 		});
 	
 	

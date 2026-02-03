@@ -5,11 +5,34 @@
 	width: 768px;
     height: 642px;
     visibility: visible;
-    margin-top: 24px;
+    margin-top: 35px;
     margin-bottom: 0px;
     position: absolute;
     overflow: visible;
     left: 0px;
+}
+.txt{
+	font-size: 12px!important;
+	
+}
+.slider_btn{
+	padding: 15px 15px  !important;
+}
+.image_slider{
+	padding-top: 20px !important;
+
+}
+.title_tag{
+   font-size: 14px !important;
+}
+.heading_tag{
+   font-size: 26px !important;
+}
+.about-me{
+	font-size: 26px !important;
+}
+.text_slider{
+	font-size: 12px !important
 }
 	.gurumantra-comment-item > .gurumantra-comment-item {
 		margin-left:0px;
@@ -1176,7 +1199,7 @@
 	}
 	
 	.contact-map-section{
-		padding-top:var(--padding-top-130);
+		padding-top:var(--padding-top-30);
 	}
 	.admin-bar .fixed-header .sticky-header{
 		display:none;
@@ -1663,5 +1686,29 @@ button, a:hover, a:focus, a:visited {
     font-size: 14px;
     color: #000;
 }
+
+.txt{
+	font-size: 12px!important;
+	
+}
+.slider_btn{
+	padding: 15px 15px  !important;
+}
+.image_slider{
+	padding-top: 20px !important;
+
+}
+.title_tag{
+   font-size: 10px !important;
+}
+.heading_tag{
+   font-size: 14px !important;
+}
+.about-me{
+	font-size: 14px !important;
+}
+.text_slider{
+	font-size: 5px !important
 }
 
+}

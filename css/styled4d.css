@@ -7825,8 +7825,8 @@ section.news-section .theme-btn {
 	left:0px;
 	bottom:-20px;
 	right:80px;
+	top:331px;
 	margin-left:-200px;
-	border-radius:15px;
 	overflow:hidden;
 	box-shadow:0px 0px 15px rgba(0,0,0,0.10);
 }
@@ -8529,7 +8529,7 @@ section.news-section .theme-btn {
 .journey-card {
    
     border-radius: 14px;
-    padding: 28px 22px;
+    padding: 28px 5px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     text-align: center;
     border: 1px solid #eef1f4;
@@ -9502,4 +9502,5 @@ select:has(option[value=""]:checked) {
 .tutor-course-filter-container.active{
   right:0px;
 } 
+
 
