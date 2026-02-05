@@ -12,7 +12,7 @@
     left: 0px;
 }
 .txt{
-	font-size: 12px!important;
+	font-size: 9px!important;
 	
 }
 .slider_btn{
@@ -1710,5 +1710,26 @@ button, a:hover, a:focus, a:visited {
 .text_slider{
 	font-size: 5px !important
 }
+}
+@media (max-width: 991px) {
+    .et_pb_row_5col {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 
+    .et_pb_row_5col > .et_pb_column {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+@media (min-width:1023px) and (max-width:1081px) {
+	.et_pb_row_5col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 74px;
+}
+	
 }

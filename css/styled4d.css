@@ -4004,13 +4004,12 @@
 }
 
 .gallery-block .inner-box .image-box .plus-link:hover{
-	background-color:var(--main-color-two);
+	background-color:#087f7b;
+	color: #fff !important;
 }
-
 .gallery-block.mix{
 	display:none;
 }
-
 /*** 
 
 ====================================================================
@@ -7833,7 +7832,7 @@ section.news-section .theme-btn {
 
 .skill-section .image-column .lower-box .box-inner{
 	position:relative;
-	padding-right:210px;
+	padding-right:202px;
 }
 
 .skill-section .image-column .lower-box .skill-box{
@@ -8484,17 +8483,18 @@ section.news-section .theme-btn {
 
 }
  .et_pb_row_5col {
-	display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    gap: 0px;
+	display: flex;
+    justify-content: center;   /* 🔥 removes big space */
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 120px;
 }
 
 .flex_align {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    gap: 150px;
+    gap: 110px;
     margin-top: 70px;
 }
 /* Common feature circle */

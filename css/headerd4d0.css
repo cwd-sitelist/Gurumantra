@@ -673,6 +673,7 @@ header.main-header.header-style-two.header-style-five {
 	height: 100%;
 	visibility: hidden;
 	z-index: 999999;
+	transition: transform 0.15s ease-out;
 }
 
 .mobile-menu .nav-logo{
