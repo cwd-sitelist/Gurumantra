@@ -9503,4 +9503,20 @@ select:has(option[value=""]:checked) {
   right:0px;
 } 
 
-
+.image-box img{
+	position: relative;
+}
+.course_title{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 8px 12px;
+	border-radius: 6px;
+	font-size: 17px;
+}
+.image-box:hover .course_title{
+	opacity: 0;
+	visibility: hidden;
+}
