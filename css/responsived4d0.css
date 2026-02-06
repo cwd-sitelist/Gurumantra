@@ -1,6 +1,11 @@
 /* Averon HTML Template */
 @media (min-width: 768px) and (max-width: 1200px){
-
+.video-path {
+    width: 50%;
+    padding: 40px 0px;
+    border-radius: 10px;
+    margin-left: 152px;
+}
 	.slider-main{
 	width: 768px;
     height: 642px;
@@ -1395,6 +1400,17 @@
 	
 }
 @media (max-width:600px) {
+.video-path {
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+}
+.roi-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    background: #f8f8f8;
+}
 	
 	.hero-container{
 	display: block;

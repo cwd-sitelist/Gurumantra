@@ -550,26 +550,92 @@ $(window).on('scroll load', function () {
  /* =======================================================================================
       salary roi calculate 
  ========================================================================================*/ 
-    function calculateROI() {
-  const salary = Number(document.getElementById("currentSalary").value);
+// function calculateROI() {
+//   const annualSalary = Number(document.getElementById("currentSalary").value);
+//   const investment = Number(document.getElementById("investment").value);
+//   const increase = Number(document.getElementById("increase").value);
+
+//   if (annualSalary <= 0 || investment <= 0 || increase <= 0) {
+//     document.getElementById("result").innerHTML =
+//       "Please enter valid values in all fields.";
+//     return;
+//   }
+
+//   // New annual salary after hike
+//   const newAnnualSalary = annualSalary + (annualSalary * increase / 100);
+
+//   // Annual gain
+//   const annualGain = newAnnualSalary - annualSalary;
+
+//   // ROI percentage (Indian standard)
+//   const roi = (annualGain / investment) * 100;
+
+//   // Investment recovery period (months)
+//   const paybackMonths = investment / (annualGain / 12);
+
+//   document.getElementById("result").innerHTML = `
+//     <strong>Current Annual Salary:</strong> ₹${annualSalary.toLocaleString('en-IN')}<br>
+//     <strong>New Annual Salary:</strong> ₹${newAnnualSalary.toLocaleString('en-IN')}<br>
+//     <strong>Annual Gain:</strong> ₹${annualGain.toLocaleString('en-IN')}<br>
+//     <strong>ROI:</strong> ${roi.toFixed(2)}%<br>
+//     <strong>Investment Recovery:</strong> ${paybackMonths.toFixed(1)} months
+	
+//   `;
+// }
+
+
+function calculateROI() {
+  const annualSalary = Number(document.getElementById("currentSalary").value);
   const investment = Number(document.getElementById("investment").value);
   const increase = Number(document.getElementById("increase").value);
 
-  if (!salary || !investment || !increase) {
+  if (annualSalary <= 0 || investment <= 0 || increase <= 0) {
     document.getElementById("result").innerHTML =
-      "Please fill in all fields.";
+      "<p style='color:red;'>Please enter valid values in all fields.</p>";
     return;
   }
 
-  const newSalary = salary + (salary * increase / 100);
-  const annualGain = newSalary - salary;
-  const roi = ((annualGain - investment) / investment) * 100;
+  const newAnnualSalary = annualSalary + (annualSalary * increase / 100);
+  const annualGain = newAnnualSalary - annualSalary;
+  const roi = (annualGain / investment) * 100;
+  const paybackMonths = investment / (annualGain / 12);
 
-  document.getElementById("result").innerHTML =
-    `New Salary: ₹${newSalary.toFixed(2)} <br>
-     Annual Gain: ₹${annualGain.toFixed(2)} <br>
-     ROI: ${roi.toFixed(2)}%`;
+  document.getElementById("result").innerHTML = `
+    <table class="roi-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Current Annual Salary</td>
+          <td>₹${annualSalary.toLocaleString('en-IN')}</td>
+        </tr>
+        <tr>
+          <td>New Annual Salary</td>
+          <td>₹${newAnnualSalary.toLocaleString('en-IN')}</td>
+        </tr>
+        <tr>
+          <td>Annual Gain</td>
+          <td>₹${annualGain.toLocaleString('en-IN')}</td>
+        </tr>
+        <tr>
+          <td>ROI</td>
+          <td>${roi.toFixed(2)}%</td>
+        </tr>
+        <tr>
+          <td>Investment Recovery</td>
+          <td>${paybackMonths.toFixed(1)} months</td>
+        </tr>
+      </tbody>
+    </table>
+  `;
 }
+
+
+
 
 
 

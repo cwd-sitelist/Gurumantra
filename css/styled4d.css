@@ -691,6 +691,7 @@
 	right:0px;
 	bottom:0px;
 	z-index:10;
+	border: 1px solid #0abab477;
 	opacity:0.30;
 	background-color:var(--dark-color);
 }
@@ -8896,9 +8897,31 @@ section.news-section .theme-btn {
 .roi-content li {
   margin-bottom: 10px;
 }
+.roi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.roi-table th,
+.roi-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+   font-size: 14px;
+}
+
+.roi-table th {
+  background: #0db9b1;
+  color: #fff;
+  text-align: left;
+}
+
+.roi-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
 
 .roi-form {
-  width: 50%;
+  width: 100%;
   background: #ffffff;
   padding: 30px;
   border-radius: 10px;
@@ -9519,4 +9542,10 @@ select:has(option[value=""]:checked) {
 .image-box:hover .course_title{
 	opacity: 0;
 	visibility: hidden;
+}
+.video-path{
+  width: 50%;
+  padding: 40px 0px;
+  border-radius: 10px;
+
 }
