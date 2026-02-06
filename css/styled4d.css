@@ -690,8 +690,9 @@
 	top:0px;
 	right:0px;
 	bottom:0px;
+	
 	z-index:10;
-	border: 1px solid #0abab477;
+	border: 2px solid #0abab4;
 	opacity:0.30;
 	background-color:var(--dark-color);
 }
@@ -8907,7 +8908,8 @@ section.news-section .theme-btn {
 .roi-table td {
   border: 1px solid #ddd;
   padding: 12px;
-   font-size: 14px;
+ font-size: 14px;
+ font-weight: 400;
 }
 
 .roi-table th {
