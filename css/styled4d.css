@@ -697,8 +697,8 @@
 
 .video-box-two .overlay-box span{
 	position: absolute;
-	width:80px;
-	height: 80px;
+	width:50px;
+	height: 50px;
 	left:50%;
     top: 50%;
 	z-index:10;
@@ -706,8 +706,8 @@
 	text-align: center;
 	display: inline-block;
 	margin-top: -40px;
-	margin-left:-40px;
-	line-height:80px;
+	margin-left:-22px;
+	line-height:53px;
 	border-radius:50%;
 	font-size:var(--font-14);
 	color: var(--white-color);
@@ -727,8 +727,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width:80px;
-	height: 80px;
+    width:50px;
+	height: 50px;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
