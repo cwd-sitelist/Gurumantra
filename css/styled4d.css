@@ -3858,7 +3858,7 @@
 
 .portfolio-page-section{
 	position:relative;
-	padding:120px 0px 80px;
+	padding:30px 0px 30px;
 }
 
 .portfolio-page-section .filters{
@@ -8390,6 +8390,7 @@ section.news-section .theme-btn {
 .social-box-2{
 	display: flex;
 	gap: 20px;
+	justify-content: center;
 }
 
 .loader img {
@@ -9553,4 +9554,12 @@ select:has(option[value=""]:checked) {
   padding: 40px 0px;
   border-radius: 10px;
 
+}
+
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
 }

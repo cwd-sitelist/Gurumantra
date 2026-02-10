@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gurumantra4u - Web Development </title>
+    <title>GuruMantra4U - Web Development </title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -90,6 +90,12 @@
                                         class="hvr-underline-from-left1" aria-expanded="false" data-scroll
                                         data-options="easing: easeOutQuart" onClick="return true">Courses</a>
                                 </li>
+                                <li id="menu-item-448"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-448 dropdown">
+									<a title="Blog" href="#" data-toggle="dropdown1"
+										class="hvr-underline-from-left1" aria-expanded="false" data-scroll
+										data-options="easing: easeOutQuart" onClick="return true">Blog</a>
+								</li>
                                 <li id="menu-item-489"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-489 dropdown">
                                     <a title="Contact Us" href="contact.html" data-toggle="dropdown1"
@@ -171,12 +177,12 @@
                             </div>
                             <div class="content-box">
                                 <h4>About Us</h4>
-                                <p class="text">Our mission is to provide industry-expert training with hands-on labs,
-                                    live projects, and personalized mentoring—helping you build production-ready skills
-                                    using cutting-edge tools and frameworks demanded by top companies today.
+                                <p class="text">Our aim is to provide training in all the courses related to software
+									people in a clear way without any doubts by using up-to-date technologies
+									structures,	systems and procedures available with us.
                                 </p>
 
-                                <a href="#" class="theme-btn btn-style-one"><span class="txt">Enquiry Now</span></a>
+                                <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Enquiry Now</span></a>
                             </div>
                             <div class="contact-info">
                                 <h4>Contact Info</h4>
@@ -198,9 +204,9 @@
                             </div>
                             <!-- Social Box -->
                             <ul class="social-box">
-                                <li><a href="#" class="fa fa-facebook" target="_blank"></a></li>
-                                <li><a href="#" class="fa fa-instagram" target="_blank"></a></li>
-                                <li><a href="#" class="fa fa-youtube" target="_blank"></a></li>
+                                <li><a href="https://www.facebook.com/share/1869qgGkhC/" class="fa fa-facebook" target="_blank"></a></li>
+                                <li><a href="https://www.instagram.com/gurumantra4u/" class="fa fa-instagram" target="_blank"></a></li>
+                                <li><a href="https://www.youtube.com/@gurumantra4u" class="fa fa-youtube" target="_blank"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -252,41 +258,45 @@
             <div class="hero-right">
                 <h3>Want to know more</h3>
 
-                <form>
-                    <label>Name *</label>
-                    <input type="text" placeholder="Enter the Name">
+              <form id="careerForm">
 
-                    <label>Email *</label>
-                    <input type="email" placeholder="Enter the Email">
+  <label>Name *</label>
+  <input type="text" id="name" placeholder="Enter the Name">
+  <small class="error"></small>
 
-                    <label>Phone (or) Whatsapp Number *</label>
-                    <div class="phone">
+  <label>Email *</label>
+  <input type="email" id="email" placeholder="Enter the Email">
+  <small class="error"></small>
 
-                        <input type="text" placeholder="Phone Number">
-                    </div>
+  <label>Phone (or) Whatsapp Number *</label>
+  <div class="phone">
+    <input type="text" id="phone" placeholder="Phone Number">
+  </div>
+  <small class="error"></small>
 
-                    <label>What is your current profession? *</label>
-                    <select>
-                        <option value="" disabled selected>-- Select an option --</option>
-                        <option>student</option>
-                        <option>Non-It</option>
-                        <option>Career-Gap</option>
-                        <option>Working proffesional</option>
-                    </select>
-                    <label>Choose the Course That Shapes Your Future</label>
-                    <select>
-                        <option value="" disabled selected>-- Select an option --</option>
-                        <option>Full Stack Development</option>
-                        <option>Web Development</option>
-                        <option>Data Science </option>
-                        <option>Data Analyst</option>
-                        <option>selenium automation</option>
+  <label>What is your current profession? *</label>
+  <select id="profession">
+    <option value="">-- Select an option --</option>
+    <option>Student</option>
+    <option>Non-IT</option>
+    <option>Career Gap</option>
+    <option>Working Professional</option>
+  </select>
+  <small class="error"></small>
 
-                    </select>
+  <label>Choose the Course That Shapes Your Future *</label>
+  <select id="course">
+    <option value="">-- Select an option --</option>
+    <option>Full Stack Development</option>
+    <option>Web Development</option>
+    <option>Data Science</option>
+    <option>Data Analyst</option>
+    <option>Selenium Automation</option>
+  </select>
+  <small class="error"></small>
 
-                    <button class="btn submit">Request a call back</button>
-                </form>
-            </div>
+  <button type="submit" class="btn submit">Submit</button>
+</form>            </div>
 
         </div>
     </section>
@@ -1277,9 +1287,7 @@
                                 <div class="logo">
                                     <a href="index.html"><img src="image/Gm_logo-02.png" alt="Footer_logo"></a>
                                 </div>
-                                <div class="text">Our mission is to provide industry-expert training with hands-on labs,
-                                    live projects, and personalized mentoring—helping you build production-ready skills
-                                    using cutting-edge tools and frameworks demanded by top companies today.
+                                <div class="text">At Gurumantra4U, we turn learning into careers. Our programs focus on real-time projects, practical exposure, and expert mentorship—so you gain the confidence and skills top companies are actively looking for.
                                 </div>
                             </div>
 
@@ -1351,14 +1359,14 @@
             <div class="footer-bottom">
                 <div class="clearfix">
                     <div class="pull-left">
-                        <div class="copyright">Copyright By &copy; <a href="#" target="_blank">Gurumantra4u</a> -
+                        <div class="copyright">Copyright By &copy; <a href="#" target="_blank">GuruMantra4U</a> -
                             2026</div>
                     </div>
                     <div class="pull-right">
                         <ul class="social-box-2">
-                            <li><a href="javascript:void(0)" class="fa fa-facebook icon"></a></li>
-                            <li><a href="javascript:void(0)" class="fa fa-instagram icon"></a></li>
-                            <li><a href="javascript:void(0)" class="fa fa-youtube icon"></a></li>
+                            <li><a href="https://www.facebook.com/share/1869qgGkhC/" class="fa fa-facebook icon"></a></li>
+                            <li><a href="https://www.instagram.com/gurumantra4u/" class="fa fa-instagram icon"></a></li>
+                            <li><a href="https://www.youtube.com/@gurumantra4u" class="fa fa-youtube icon"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -1387,6 +1395,66 @@
     <script type="text/javascript" src="js/jquery.counterup.min431f.js"></script>
     <script type="text/javascript" src="js/scriptd4d0.js"></script>
     <script type="text/javascript" src="js/rs6.min097f.js" defer async></script>
+    <script>
+document.getElementById("careerForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let isValid = true;
+
+  // Inputs
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const phone = document.getElementById("phone");
+  const profession = document.getElementById("profession");
+  const course = document.getElementById("course");
+
+  // Clear all errors
+  document.querySelectorAll(".error").forEach(el => el.textContent = "");
+
+  // Name
+  if (name.value.trim() === "") {
+    name.nextElementSibling.textContent = "Name is required";
+    isValid = false;
+  }
+
+  // Email
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email.value.trim() === "") {
+    email.nextElementSibling.textContent = "Email is required";
+    isValid = false;
+  } else if (!emailPattern.test(email.value)) {
+    email.nextElementSibling.textContent = "Enter a valid email";
+    isValid = false;
+  }
+
+  // Phone
+  if (phone.value.trim() === "") {
+    phone.closest(".phone").nextElementSibling.textContent = "Phone number is required";
+    isValid = false;
+  }
+
+  // Profession
+  if (profession.value === "") {
+    profession.nextElementSibling.textContent = "Please select your profession";
+    isValid = false;
+  }
+
+  // Course
+  if (course.value === "") {
+    course.nextElementSibling.textContent = "Please select a course";
+    isValid = false;
+  }
+
+  // If all valid
+  if (isValid) {
+    alert("Form submitted successfully ✅");
+
+    // Reset form
+    document.getElementById("careerForm").reset();
+  }
+});
+</script>
+
 
 
 </body>

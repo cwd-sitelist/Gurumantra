@@ -113,7 +113,59 @@
 			  direction: 'horizontal' // vertical, horizontal  
 		});
 	}
-	
+
+	/* =======================================================================================
+   footer script
+   ========================================================================================*/ 
+	document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.querySelector("#gurumantra_newsletter-2 form");
+  const emailInput = form.querySelector('input[name="email"]');
+
+  // Create message element
+  const message = document.createElement("p");
+  message.style.marginTop = "10px";
+  message.style.fontSize = "14px";
+  form.appendChild(message);
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop reload
+
+    const email = emailInput.value.trim();
+
+    // Email validation regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+      message.style.color = "red";
+      message.textContent = "Please enter your email address.";
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      message.style.color = "red";
+      message.textContent = "Please enter a valid email address.";
+      return;
+    }
+
+    // SUCCESS
+    message.style.color = "#10b8b0";
+    message.textContent = "Thanks for subscribing! 🎉";
+
+    // Clear input
+    emailInput.value = "";
+
+    // 🔔 OPTIONAL: send to backend / API
+    // fetch("save-email.php", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify({ email: email })
+    // });
+
+  });
+
+});
+
 	
 	
 	//Accordion Box
@@ -550,40 +602,6 @@ $(window).on('scroll load', function () {
  /* =======================================================================================
       salary roi calculate 
  ========================================================================================*/ 
-// function calculateROI() {
-//   const annualSalary = Number(document.getElementById("currentSalary").value);
-//   const investment = Number(document.getElementById("investment").value);
-//   const increase = Number(document.getElementById("increase").value);
-
-//   if (annualSalary <= 0 || investment <= 0 || increase <= 0) {
-//     document.getElementById("result").innerHTML =
-//       "Please enter valid values in all fields.";
-//     return;
-//   }
-
-//   // New annual salary after hike
-//   const newAnnualSalary = annualSalary + (annualSalary * increase / 100);
-
-//   // Annual gain
-//   const annualGain = newAnnualSalary - annualSalary;
-
-//   // ROI percentage (Indian standard)
-//   const roi = (annualGain / investment) * 100;
-
-//   // Investment recovery period (months)
-//   const paybackMonths = investment / (annualGain / 12);
-
-//   document.getElementById("result").innerHTML = `
-//     <strong>Current Annual Salary:</strong> ₹${annualSalary.toLocaleString('en-IN')}<br>
-//     <strong>New Annual Salary:</strong> ₹${newAnnualSalary.toLocaleString('en-IN')}<br>
-//     <strong>Annual Gain:</strong> ₹${annualGain.toLocaleString('en-IN')}<br>
-//     <strong>ROI:</strong> ${roi.toFixed(2)}%<br>
-//     <strong>Investment Recovery:</strong> ${paybackMonths.toFixed(1)} months
-	
-//   `;
-// }
-
-
 function calculateROI() {
   const annualSalary = Number(document.getElementById("currentSalary").value);
   const investment = Number(document.getElementById("investment").value);
@@ -633,6 +651,9 @@ function calculateROI() {
     </table>
   `;
 }
+
+
+
 
 
 
