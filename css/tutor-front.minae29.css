@@ -554,11 +554,11 @@ body .media-modal * {
 .tutor-wrap {
     color: var(--tutor-body-color)
 }
-
+/* 
 .tutor-wrap img {
-    max-width: 130%;
+    max-width: 100%;
     height: auto
-}
+} */
 
 .tutor-custom-list-style {
     list-style: none;

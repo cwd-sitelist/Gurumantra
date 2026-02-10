@@ -8441,10 +8441,13 @@ section.news-section .theme-btn {
 	display: flex;
 	gap: 80px;
 }
-
-#langimg img{
-	  width:150px;
+.et_pb_image_wrap  img{
+	width: 60px;
+	max-width: none;
 }
+
+
+
 
 .Flex_cls:hover {
     background: #04a79f !important;
