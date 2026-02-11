@@ -6,6 +6,34 @@
     border-radius: 10px;
     margin-left: 152px;
 }
+.course_title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px !important;
+}
+.gallery-block .inner-box .image-box .plus-link
+ {
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    line-height: 32px;
+    display: inline-block;
+    font-size: var(--font-18);
+    color: var(--main-color);
+    font-family: "flaticon";
+    background-color: var(--white-color);
+}
+    h4 {
+        font-size: var(--font-14)!important;
+    }
 	.slider-main{
 	width: 768px !important;
     height: 642px !important;
@@ -352,7 +380,7 @@
 	}
 	
 	.course-tabs .required-column .required-text:before{
-		opacity:0;
+		opacity:1;
 	}
 	
 	.mentor-widget .lower-content{
@@ -433,18 +461,7 @@
 	
 }
 
-@media only screen and (max-width: 870px){
-	
-	
-	
-}
 
-
-@media only screen and (max-width: 976px){
-	
-	
-	
-}
 	
 @media only screen and (max-width: 1023px){
 	
@@ -1473,7 +1490,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 10px;
     background: linear-gradient(135deg, var(--main-color), #087f7b);
 }
 .syllabus-header p {
@@ -1489,11 +1506,16 @@
     margin-bottom: 14px;
     font-family: var(--font-family-gilroy);
 }
-#langimg img {
+/* #langimg img {
     width: 84px;
-}
+} */
 #langimg {
-    display: block;
+   
+	display:flex;
+        flex-direction:row;     /* keep in one line */
+        justify-content:center; /* center horizontally */
+        align-items:center;
+        gap:5px;
    
 }
 .logo_section {
@@ -1534,13 +1556,20 @@
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
+#social-sidebar{
+	display: none;
+}
+.main-footer .widgets-section {
+    position: relative;
+    padding: 30px 0px 30px;
+}
 .pricing-left {
     width: 100%;
     padding: 40px;
 }
 .pricing-middle {
     width: 100%;
-    padding: 40px;
+    padding: 10px 40px;
     border-left: 1px dashed #0abab4;
 }
 .pricing-right {
@@ -1567,13 +1596,17 @@
 }
 
 .hero {
-    padding: 40px 20px;
+    padding: 5px 20px;
 }
 
 .hero-left h1 {
     font-size: 29px;
     font-weight: 700;
     color: #1e1e1e;
+	line-height: 1.2;	
+}
+.para_txt{
+	display: none;
 }
 .duration {
     margin: 25px 0;
@@ -1666,21 +1699,7 @@ button, a:hover, a:focus, a:visited {
     color: var(--white-color);
     margin-bottom: 0px;
 }
-#social-sidebar a
- {
-    padding: 1px 3px;
-    color: #000;
-    text-decoration: none;
-    display: block;
-    height: 40px;
-    width: 40px;
-    font-size: 24px;
-    line-height: 41px;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 10px;
-}
+
 .skill-section .image-column .lower-box .box-inner {
     display: none;
 }
@@ -1701,32 +1720,58 @@ button, a:hover, a:focus, a:visited {
     font-size: 14px;
     color: #000;
 }
+.et_pb_text_inner {
+    margin-bottom: 20px;
+}
 
 .txt{
 	font-size: 12px!important;
 	
 }
-
+.slider-main{
+	 width: 320px;
+    height: 300px;
+    visibility: visible;
+    margin-top: -29px !important;
+    margin-bottom: 0px;
+    position: absolute;
+    overflow: visible;
+    left: 0px;
+}
+.image_slider{
+	display: none!important;
+}
 .slider_btn{
-	padding: 15px 15px  !important;
+	padding: 7px 12px  !important;
+	margin-top: 25px !important;
 }
 .image_slider{
 	padding-top: 20px !important;
 
 }
 .title_tag{
-   font-size: 10px !important;
+   font-size: 8px !important;
+   margin-top: 10px;
 }
 .heading_tag{
-   font-size: 14px !important;
+   font-size: 20px !important;
+   margin-top: 15px;
+   line-height: 1.2 !important;
+
 }
 .about-me{
-	font-size: 14px !important;
+	font-size: 20px !important;
 	font-weight: 700!important;
+
 }
 
 .text_slider{
-	font-size: 5px !important;
+	font-size: 10px !important;
+	line-height: 1.5 !important;
+	margin-top: 25px;
+}
+#social-sidebar a span{
+	display: none;
 }
 }
 @media (max-width: 991px) {
@@ -1753,4 +1798,5 @@ button, a:hover, a:focus, a:visited {
 .section-bg{
 	    margin-top: 42px;
 }
+
 }
