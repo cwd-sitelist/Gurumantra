@@ -8431,7 +8431,7 @@ section.news-section .theme-btn {
 
 
 .logo_section{
-	 padding: 10px 0px 10px 0px;
+	 padding: 30px 0px 30px 0px;
 	 width:51vw;
 	 margin: auto;
 	 text-align: center;
@@ -9385,7 +9385,7 @@ section.news-section .theme-btn {
 .faq-section {
   max-width: 900px;
   margin: auto;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family-roboto);
 }
 
 .faq-section h2 {
@@ -9420,7 +9420,7 @@ section.news-section .theme-btn {
 .faq-question .icon::before {
   content: "+";
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
   transition: 0.3s ease;
 }
 
