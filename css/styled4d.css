@@ -3878,7 +3878,7 @@
 .portfolio-page-section .filters li{
 	position: relative;
     display: inline-block;
-    color: #999999;
+    color: #000;
 	padding:18px 25px;
     cursor: pointer;
     font-size: var(--font-16);
@@ -3982,7 +3982,8 @@
 
 .gallery-block .inner-box .image-box .overlay-box .category{
 	position:relative;
-	color:#ffe4aa;
+	color:#000;
+	font-weight: 700;
 	font-size:var(--font-14);
 	margin-bottom:var(--margin-bottom-5);
 }
@@ -8539,8 +8540,8 @@ section.news-section .theme-btn {
     padding: 28px 5px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     text-align: center;
-    border: 1px solid #eef1f4;
-	background-color: #92d0c6;
+    border: 1px solid #eee;
+	background-color: #92d0c678;
 
 
 }
@@ -8618,7 +8619,7 @@ section.news-section .theme-btn {
 .journey-line {
     width: 2px;
     height: 24px;
-    background: #cfd6dd;
+    background: #087f7b;
     margin: 12px auto;
 }
 

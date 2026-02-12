@@ -932,6 +932,7 @@
     position: relative;
     z-index: 1;
     font-size: 14px;
+	padding: 0px 5px;
     }
 	.social-box-2 {
     display: flex;
@@ -1742,16 +1743,16 @@ button, a:hover, a:focus, a:visited {
 	display: none!important;
 }
 .slider_btn{
-	padding: 7px 12px  !important;
-	margin-top: 25px !important;
+   
+	margin-top: 35px !important;
 }
 .image_slider{
 	padding-top: 20px !important;
 
 }
 .title_tag{
-   font-size: 8px !important;
-   margin-top: 10px;
+   font-size: 13px !important;
+   margin-top: 5px !important;
 }
 .heading_tag{
    font-size: 20px !important;
@@ -1762,13 +1763,12 @@ button, a:hover, a:focus, a:visited {
 .about-me{
 	font-size: 20px !important;
 	font-weight: 700!important;
-
 }
-
 .text_slider{
 	font-size: 10px !important;
 	line-height: 1.5 !important;
-	margin-top: 25px;
+	margin-top: 25px !important;
+	margin-bottom: 40px !important;
 }
 #social-sidebar a span{
 	display: none;
@@ -1779,7 +1779,6 @@ button, a:hover, a:focus, a:visited {
         flex-wrap: wrap;
         gap: 15px;
     }
-
     .et_pb_row_5col > .et_pb_column {
         flex: 0 0 45%;
         max-width: 45%;
