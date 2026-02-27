@@ -55,7 +55,7 @@
 .main-footer .contact-info-list li {
     font-size: var(--font-16);
     color: var(--white-color);
-	opacity: 0.70;
+	
 	line-height: 1.7em;
 }
 .main-footer ul.menu{
@@ -69,7 +69,7 @@
 	float: left;
 }
 .main-footer ul.menu li a{
-	color:#b7b7b7;
+	color:#fff;
 	font-size:var(--font-16);
 }
 .main-footer ul.menu li a:hover{

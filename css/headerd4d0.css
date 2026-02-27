@@ -1250,6 +1250,7 @@ header.main-header.header-style-two.header-style-five {
 .sidebar-info-contents .content-inner .contact-info h4{
 	color:var(--white-color);
 	font-weight:500;
+	font-size: 18px;
 	margin-bottom:var(--margin-top-20);
 }
 

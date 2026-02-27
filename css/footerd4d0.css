@@ -10,7 +10,7 @@
 .main-footer{
 	position:relative;
 	padding-bottom:20px;
-	background-color:var(--dark-color);
+	background-color:#000;
 }
 
 .main-footer:before{
@@ -50,7 +50,7 @@
 }
 
 .main-footer .logo-widget .text{
-	opacity:0.70;
+	
 	color:var(--white-color);
 	margin-bottom:var(--margin-bottom-20);
 }
@@ -73,10 +73,11 @@
 .main-footer .list-link li{
 	position:relative;
 	margin-bottom:var(--margin-bottom-15);
+	color:#fff;
 }
 
 .main-footer .list-link li a{
-	color:#b7b7b7;
+	color:#fff!important;
 	font-size:var(--font-16);
 }
 
@@ -177,9 +178,9 @@ footer.main-footer.footer-v4 .newsletter-form .form-group .submit-btn {
 	display:block;
 	font-weight:700;
 	font-size:var(--font-16);
-	color:var(--black-color);
+	color:var(--white-color);
 	margin-top:var(--margin-top-15);
-	background-color:var(--main-color);
+	background: linear-gradient(90deg,  #087f7b, #0abab4);
 }
 footer.main-footer.footer_v5 .newsletter-form .form-group .submit-btn {
     background: aliceblue;
@@ -245,7 +246,7 @@ footer.main-footer.style-two.footer-v7 {
 .main-footer .footer-bottom{
 	position:relative;
 	padding:26px 40px;
-	background-color:var(--main-color);
+	background: linear-gradient(90deg,  #087f7b, #0abab4);
 }
 .main-footer.footer-v4 .footer-bottom {
     background-color: #cfdcf9;
