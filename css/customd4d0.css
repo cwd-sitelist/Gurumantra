@@ -444,10 +444,14 @@ rs-sbg-wrap rs-dotted{
 }
 .course-content-title h4 {
     margin-bottom: var(--margin-bottom-15);
+	background: linear-gradient(90deg, #0abab4, #7ffcf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-size: 45px;
 }
 .tutor-course-content-content .content p {
     position: relative;
-    color: #777777;
+    color: #fff;
     font-size: 17px;
     line-height: 1.6em;
     margin-bottom: var(--margin-bottom-20);
