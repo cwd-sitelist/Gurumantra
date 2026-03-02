@@ -11628,8 +11628,13 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
 
 
 
-.buttons-box {
+.buttons-box-1 {
     display: flex;
     justify-content: center;   /* Horizontal center */
     align-items: center;       /* Vertical center (if needed) */
+}
+.buttons-box-1  button{
+	margin:auto;
+	width: auto;
+   padding: 10px 30px;
 }
