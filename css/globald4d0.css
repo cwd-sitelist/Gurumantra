@@ -562,7 +562,7 @@ p{
 	position:relative;
 	line-height:1.7em;
 	font-size:var(--font-16);
-	/* color:var(--text-color); */
+	color:var(--text-color);
 	font-family: var(--font-family-roboto);
 }
 
