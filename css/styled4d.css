@@ -11810,7 +11810,7 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
     border: 1px solid transparent;
     border-radius: 100px;
     font-family: var(--font-body);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     color: #fff;
     background: transparent;
@@ -12081,7 +12081,7 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
 
   .course-name {
     font-family: var(--font-head);
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--white);
     margin-bottom: 8px;
@@ -12090,7 +12090,7 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
   }
 
   .course-desc {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--muted);
     line-height: 1.6;
     margin-bottom: 16px;
@@ -12104,7 +12104,7 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
     display: flex;
     align-items: center;
     gap: 16px;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--muted);
     padding-top: 14px;
     border-top: 1px solid rgba(255,255,255,0.05);
@@ -12145,7 +12145,7 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
   }
   .price-tag {
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--teal);
   }
