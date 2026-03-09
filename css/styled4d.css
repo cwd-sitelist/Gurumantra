@@ -11754,8 +11754,9 @@ select:has(option[value=""]:checked) {
 		height: 24px;
 	}
 
-	.bullets {
+	.bullets li p{
 		font-size: 12px;
+		text-align: center;
 	}
 
 	.bullets li p {

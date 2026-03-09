@@ -1437,6 +1437,7 @@
     display: flex;
 	flex-direction: column;
     gap: 20px;
+	margin-bottom: 10px;
 }
 .info-bar {
     background: #fff;
@@ -1719,7 +1720,7 @@ button, a:hover, a:focus, a:visited {
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 14px;
-    color: #000;
+    /* color: #000; */
 }
 .et_pb_text_inner {
     margin-bottom: 20px;
