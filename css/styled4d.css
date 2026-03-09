@@ -11637,7 +11637,7 @@ select:has(option[value=""]:checked) {
 	.bullets {
 		font-size: 13px;
 		line-height: 1.9;
-		margin-bottom: 56px;
+		margin-bottom:10px;
 		padding-left: 0;
 		text-align: left;
 		display: inline-block;   /* keeps left-aligned while parent is centered */
@@ -12335,7 +12335,7 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
 
   .course-desc {
     font-size: 15px;
-    color: var(--muted);
+    color: #9da8b7;
     line-height: 1.6;
     margin-bottom: 16px;
     display: -webkit-box;
