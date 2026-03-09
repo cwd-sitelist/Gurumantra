@@ -11518,7 +11518,250 @@ select:has(option[value=""]:checked) {
 		transform: translateX(-50%);
 	}
 }
+/* ════════════════════════════════════════════
+   TABLET  (601px – 1024px)
+════════════════════════════════════════════ */
+@media (min-width: 601px) and (max-width: 1024px) {
 
+	.banner {
+		flex-direction: column;
+		align-items: center;
+		padding: 110px 6vw 80px;
+		gap: 40px;
+		min-height: auto;
+	}
+
+	/* ── Left / Slider ── */
+	.left {
+		width: 100%;
+		max-width: 100%;
+		min-height: 400px;
+		text-align: center;
+	}
+
+	.badges {
+		justify-content: center;
+		gap: 8px;
+		margin-bottom: 20px;
+	}
+
+	.badge {
+		font-size: 12px;
+		padding: 6px 14px;
+	}
+
+	.headline {
+		font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+		margin-bottom: 16px;
+	}
+
+	.bullets {
+		font-size: 14px;
+		line-height: 2;
+		margin-bottom: 60px; /* room for controls */
+		padding-left: 0;
+	}
+
+	.bullets li p {
+		width: 100%;
+		text-align: center;
+	}
+
+	.slider-controls {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 8px;
+	}
+
+	/* ── Right / Tech Grid ── */
+	.right {
+		width: clamp(320px, 72vw, 500px);
+		max-width: 500px;
+	}
+
+	/* Scale down icons slightly */
+	.ic {
+		width: 58px !important;
+		height: 58px !important;
+		border-radius: 13px;
+	}
+
+	.ic svg {
+		width: 34px;
+		height: 34px;
+	}
+}
+
+
+/* ════════════════════════════════════════════
+   MOBILE  (≤ 600px)
+════════════════════════════════════════════ */
+@media (max-width: 600px) {
+
+	.banner {
+		flex-direction: column;
+		align-items: center;
+		padding: 90px 5vw 70px;
+		gap: 32px;
+		min-height: auto;
+		overflow-x: hidden;
+	}
+
+	/* ── Left / Slider ── */
+	.left {
+		width: 100%;
+		max-width: 100%;
+		min-height: 360px;
+		text-align: center;
+	}
+
+	.badges {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 7px;
+		margin-bottom: 18px;
+	}
+
+	.badge {
+		font-size: 11px;
+		padding: 5px 12px;
+		gap: 5px;
+	}
+
+	.headline {
+		font-size: clamp(1.5rem, 7vw, 2rem);
+		line-height: 1.25;
+		margin-bottom: 14px;
+	}
+
+	.bullets {
+		font-size: 13px;
+		line-height: 1.9;
+		margin-bottom: 56px;
+		padding-left: 0;
+		text-align: left;
+		display: inline-block;   /* keeps left-aligned while parent is centered */
+	}
+
+	.bullets li p {
+		width: 85vw;
+		text-align: left;
+	}
+
+	/* Slider controls — centred */
+	.slider-controls {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 6px;
+		gap: 10px;
+	}
+
+	.arrow-btn {
+		width: 30px;
+		height: 30px;
+		font-size: 13px;
+	}
+
+	.dot {
+		width: 6px;
+		height: 6px;
+	}
+
+	/* Slide transitions — shorter on mobile */
+	.slide {
+		transform: translateX(50px);
+	}
+
+	.slide.exit {
+		transform: translateX(-50px);
+	}
+
+	/* ── Right / Tech Grid ── */
+	.right {
+		width: 88vw;
+		max-width: 360px;
+	}
+
+	/* Smaller icons */
+	.ic {
+		width: 48px !important;
+		height: 48px !important;
+		border-radius: 11px;
+	}
+
+	.ic svg {
+		width: 28px;
+		height: 28px;
+	}
+
+	/* Reposition icons to avoid overflow at small sizes */
+	.ic-react  { top: 8%;  left: 6%; }
+	.ic-js     { top: -2%; left: 36%; }
+	.ic-vs     { top: 24%; left: 33%; }
+	.ic-dj     { top: 12%; right: 8%; }
+	.ic-mu     { top: 39%; left: 0%; }
+	.ic-ts     { top: 49%; right: 40%; }
+	.ic-py     { top: 39%; right: 10%; }
+	.ic-vite   { top: 62%; left: 14%; }
+	.ic-gh     { top: 76%; right: 18%; }
+	.ic-css    { top: 86%; right: 52%; }
+	.ic-tail   { top: 57%; right: 0%; }
+
+	/* Slightly reduce float amplitude on mobile */
+	@keyframes float {
+		0%, 100% { transform: translateY(0); }
+		50%       { transform: translateY(-5px); }
+	}
+
+	/* Rings — keep proportional */
+	.r2 {
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+/* ════════════════════════════════════════════
+   EXTRA SMALL  (≤ 380px)
+════════════════════════════════════════════ */
+@media (max-width: 380px) {
+
+	.banner {
+		padding: 80px 4vw 60px;
+	}
+
+	.headline {
+		font-size: 1.4rem;
+	}
+
+	.badge {
+		font-size: 10px;
+		padding: 4px 10px;
+	}
+
+	.right {
+		width: 94vw;
+	}
+
+	.ic {
+		width: 42px !important;
+		height: 42px !important;
+		border-radius: 10px;
+	}
+
+	.ic svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.bullets {
+		font-size: 12px;
+	}
+
+	.bullets li p {
+		width: 90vw;
+	}
+}
 
 /* ============================================
    SOFT WAVE BACKGROUNDS - GuruMantra4U
@@ -12329,4 +12572,16 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
     .featured-card-info { padding: 18px; }
   }
 
+@media (min-width:320px) and (max-width:600px){
+	.roi-wrapping{
+		display: block;
+	}
+	.course-content-title h4 {
+    margin-bottom: var(--margin-bottom-15);
+    background: linear-gradient(90deg, #0abab4, #7ffcf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px!important;
+}
+}
 

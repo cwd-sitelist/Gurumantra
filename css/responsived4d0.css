@@ -1585,7 +1585,7 @@
     margin-top: 20px;
     background: #0abab4;
     color: #000;
-    padding: 14px 61px;
+    /* padding: 14px 61px; */
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -1616,7 +1616,7 @@
 .video-intro-widget .lower-content {
     position: relative;
     padding: 40px 35px 15px;
-    background-color: var(--color-three);
+    /* background-color: var(--color-three); */
     margin-top: 0px;
 }
 .nav-btn{
