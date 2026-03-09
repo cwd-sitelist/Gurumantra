@@ -11501,7 +11501,7 @@ select:has(option[value=""]:checked) {
 	.banner {
 		flex-direction: column;
 		padding: 110px 5vw 60px;
-		text-align: center;
+		
 	}
 
 	.badges {
