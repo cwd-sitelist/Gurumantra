@@ -11199,7 +11199,7 @@ select:has(option[value=""]:checked) {
 	-webkit-text-fill-color: transparent;
 }
 
-.bullets {
+.bullets li p {
 	list-style: disc;
 	padding-left: 0px;
 	color: #fff;
@@ -11634,18 +11634,18 @@ select:has(option[value=""]:checked) {
 		margin-bottom: 14px;
 	}
 
-	.bullets {
-		font-size: 13px;
+	.bullets li p {
+		font-size: 12px;
 		line-height: 1.9;
 		margin-bottom:10px;
 		padding-left: 0;
-		text-align: left;
-		display: inline-block;   /* keeps left-aligned while parent is centered */
+		text-align: center;
+		
 	}
 
 	.bullets li p {
-		width: 85vw;
-		text-align: left;
+		width: 90vw;
+		text-align: center;
 	}
 
 	/* Slider controls — centred */
@@ -12349,7 +12349,7 @@ background: linear-gradient(90deg,  #087f7b, #0abab4);
     align-items: center;
     gap: 16px;
     font-size: 14px;
-    color: var(--muted);
+    color: #9da8b7;
     padding-top: 14px;
     border-top: 1px solid rgba(255,255,255,0.05);
   }
