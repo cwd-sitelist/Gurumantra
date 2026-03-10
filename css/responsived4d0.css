@@ -1795,9 +1795,3 @@ button, a:hover, a:focus, a:visited {
     gap: 74px;
 }
 }
-@media (min-width:479px) and (max-width:600px) {
-.section-bg{
-	    margin-top: 42px;
-}
-
-}
