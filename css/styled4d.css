@@ -10452,7 +10452,7 @@ bdi {
 	color: #0abab4;
 }
 #tab{
-	background-color: #000;
+	background-color: #fff;
 }
 
 /* video  */
@@ -10582,16 +10582,14 @@ bdi {
 .syllabus-header h2 {
 	font-size: 42px;
 	font-weight: 700;
-	background: linear-gradient(90deg, #0abab4, #7ffcf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	color: #087f7b;
 	margin-bottom: 14px;
 	font-family: var(--font-family-gilroy);
 }
 
 .syllabus-header p {
 	font-size: 18px;
-	color: #fff;
+	color: #000;
 	line-height: 1.6;
 	font-family: 'roboto';
 }
